@@ -3,8 +3,9 @@
 import Link from 'next/link';
 import { Check, Plus } from 'lucide-react';
 import { toast } from 'sonner';
-import type { MatchCriterion, ProductListItem } from '@specfinder/shared';
+import type { MatchCriterion, ProductListItem, Variant } from '@specfinder/shared';
 import { Button } from '@/components/ui/button';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
 import { FieldLabel, TermTooltip } from '@/components/glossary/term-tooltip';
 import {
@@ -146,20 +147,60 @@ function ComplianceStrip({
   );
 }
 
+function AdditionalSizesTooltip({ variants }: { variants: Variant[] }) {
+  const additional = variants.slice(1);
+  if (additional.length === 0) return null;
+
+  const sizeList = additional.map((variant) =>
+    formatDimensions(variant.thicknessMm, variant.widthMm, variant.lengthMm),
+  );
+  const ariaLabel = `Also available in ${additional.length} sizes: ${sizeList.join(', ')}`;
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <span
+          className={cn(
+            'ml-2 cursor-help rounded bg-surface-sunken px-1.5 py-0.5',
+            'border-b border-dotted border-ink-muted/40 underline-offset-2',
+            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
+          )}
+          tabIndex={0}
+          aria-label={ariaLabel}
+        >
+          +{additional.length} sizes
+        </span>
+      </TooltipTrigger>
+      <TooltipContent side="top" className="max-w-xs p-0 text-left leading-snug">
+        <div className="px-3 py-2">
+          <p className="mb-1.5 font-medium">Also available</p>
+          <ul className="space-y-0.5 font-data tabular-nums">
+            {additional.map((variant) => (
+              <li key={variant.materialNumber}>
+                {formatDimensions(variant.thicknessMm, variant.widthMm, variant.lengthMm)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </TooltipContent>
+    </Tooltip>
+  );
+}
+
 function VariantMeta({
   materialNumber,
   thicknessMm,
   widthMm,
   lengthMm,
   weightPerSqmKg,
-  variantCount,
+  variants,
 }: {
   materialNumber: string;
   thicknessMm: number;
   widthMm: number;
   lengthMm: number;
   weightPerSqmKg: number;
-  variantCount: number;
+  variants: Variant[];
 }) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 py-2.5">
@@ -172,13 +213,7 @@ function VariantMeta({
         <TermTooltip term="materialNumber">
           <span className="text-ink">{materialNumber}</span>
         </TermTooltip>
-        {variantCount > 1 && (
-          <TermTooltip term="variants">
-            <span className="ml-2 rounded bg-surface-sunken px-1.5 py-0.5">
-              +{variantCount - 1} sizes
-            </span>
-          </TermTooltip>
-        )}
+        {variants.length > 1 && <AdditionalSizesTooltip variants={variants} />}
       </p>
     </div>
   );
@@ -250,7 +285,7 @@ export function ProductCard({
           widthMm={primaryVariant.widthMm}
           lengthMm={primaryVariant.lengthMm}
           weightPerSqmKg={primaryVariant.weightPerSqmKg}
-          variantCount={product.variants.length}
+          variants={product.variants}
         />
       )}
 
