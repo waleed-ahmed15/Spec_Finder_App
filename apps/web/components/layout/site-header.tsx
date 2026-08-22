@@ -16,9 +16,6 @@ export function SiteHeader() {
             <Link href="/compare" className="text-ink hover:text-primary">
               Compare
             </Link>
-            <Link href="/tokens" className="text-ink-muted hover:text-primary">
-              Tokens
-            </Link>
           </nav>
         </div>
         <SiteHeaderClient />
