@@ -2,10 +2,9 @@
   "name": "specfinder",
   "private": true,
   "scripts": {
-    "dev": "pnpm --parallel --filter @specfinder/web --filter @specfinder/api dev",
+    "dev": "pnpm --filter @specfinder/web dev",
     "dev:web": "pnpm --filter @specfinder/web dev",
-    "dev:api": "pnpm --filter @specfinder/api dev",
-    "build": "pnpm --filter @specfinder/shared build && pnpm --filter @specfinder/api build && pnpm --filter @specfinder/web build",
+    "build": "pnpm --filter @specfinder/shared build && pnpm --filter @specfinder/web build",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test",

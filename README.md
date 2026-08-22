@@ -4,10 +4,9 @@ Building professionals do not shop for products - they discharge obligations. Sp
 
 ## Live demo
 
-Deploy locally (see [Quickstart](#quickstart)). Production targets:
+Deploy locally (see [Quickstart](#quickstart)). Production target:
 
-- **Web:** Vercel - `apps/web`
-- **API:** Render - `apps/api`
+- **App:** Vercel - `apps/web` (Next.js app + Route Handlers + JSON seed)
 
 ## Quickstart
 
@@ -19,15 +18,15 @@ pnpm --filter @specfinder/shared build
 pnpm dev
 ```
 
-- Web: http://localhost:3000
-- API: http://localhost:3001/api
+- App: http://localhost:3000
+- API routes: http://localhost:3000/api
 
 ```bash
 pnpm lint
 pnpm typecheck
 pnpm test
 pnpm build
-pnpm test:e2e   # starts API + web automatically
+pnpm test:e2e   # starts the Next.js dev server automatically
 ```
 
 ## Investigation
@@ -56,11 +55,11 @@ Sources consulted: [EN 520](https://www.en-standard.eu/) gypsum board types, [EN
 ## Architecture
 
 ```
-Browser → Next.js (apps/web) → REST → Nest.js (apps/api) → JSON seed
-                                      ↘ packages/shared (Zod)
+Browser → Next.js (apps/web) → Route Handlers → JSON seed
+                            ↘ packages/shared (Zod)
 ```
 
-Nest.js models a future PIM boundary (`products.repository.ts` swap point). Filtering and match reasoning run server-side to scale beyond the 40-product seed.
+Product data lives in `apps/web/data/products.seed.json` behind a repository interface (`lib/products/products.repository.ts`) designed as a future PIM swap point. Filtering and match reasoning run server-side to scale beyond the 40-product seed.
 
 ## Data and sources
 
@@ -99,8 +98,7 @@ Run axe DevTools on `/products` and `/products/[slug]` before submission.
 
 | Layer | Coverage                                                   |
 | ----- | ---------------------------------------------------------- |
-| Unit  | `ranking.ts`, `format.ts`, `query-params.ts`               |
-| API   | Vitest ranking tests                                       |
+| Unit  | `ranking.ts`, `format.ts`, `query-params.ts`, document generator |
 | E2E   | Playwright - filter journey, material search, mobile sheet |
 
 Not covered: visual regression, load testing, real PIM integration.
@@ -118,8 +116,6 @@ AI assisted research, scaffolding, component wiring, seed generation, and docume
 
 ## Deploy (manual)
 
-**Vercel (`apps/web`):** set `NEXT_PUBLIC_API_URL` to the Render API URL.
-
-**Render (`apps/api`):** build `pnpm install && pnpm --filter @specfinder/shared build && pnpm --filter @specfinder/api build`, start `node dist/main.js`, set `WEB_ORIGIN` to the Vercel URL.
+**Vercel (`apps/web`):** import the repo, set root directory to `apps/web`, deploy. No extra environment variables are required unless you override the default `/api` base path with `NEXT_PUBLIC_API_URL`.
 
 ![CI](https://github.com/YOUR_ORG/specfinder/actions/workflows/ci.yml/badge.svg)

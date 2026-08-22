@@ -1,9 +1,4 @@
 import {
-  BadRequestException,
-  Injectable,
-  NotFoundException,
-} from '@nestjs/common';
-import {
   ProductsQuerySchema,
   type Application,
   type FacetsResponse,
@@ -13,15 +8,15 @@ import {
   type ProductsQuery,
   type ProductsResponse,
 } from '@specfinder/shared';
-import { ProductsRepository } from './products.repository';
-import { buildMatch, rankProducts } from './ranking';
+import { BadRequestError, NotFoundError } from './errors';
 import {
   generateProductDocument,
   isPreviewableDocumentType,
   type PreviewableDocumentType,
 } from './document-generator';
+import { ProductsRepository } from './products.repository';
+import { buildMatch, rankProducts } from './ranking';
 
-@Injectable()
 export class ProductsService {
   constructor(private readonly repository: ProductsRepository) {}
 
@@ -29,7 +24,7 @@ export class ProductsService {
     const normalized = this.normalizeQuery(raw);
     const result = ProductsQuerySchema.safeParse(normalized);
     if (!result.success) {
-      throw new BadRequestException({
+      throw new BadRequestError({
         message: 'Invalid query parameters',
         errors: result.error.issues.map((issue) => ({
           field: issue.path.join('.'),
@@ -106,24 +101,24 @@ export class ProductsService {
   findBySlug(slug: string): Product {
     const product = this.repository.findBySlug(slug);
     if (!product) {
-      throw new NotFoundException(`Product "${slug}" not found`);
+      throw new NotFoundError(`Product "${slug}" not found`);
     }
     return product;
   }
 
   getDocument(slug: string, type: string) {
     if (!isPreviewableDocumentType(type)) {
-      throw new BadRequestException(`Unknown document type "${type}"`);
+      throw new BadRequestError({ message: `Unknown document type "${type}"` });
     }
 
     const product = this.findBySlug(slug);
     const document = product.documents.find((entry) => entry.type === type);
     if (!document) {
-      throw new NotFoundException(`Document "${type}" not found for product "${slug}"`);
+      throw new NotFoundError(`Document "${type}" not found for product "${slug}"`);
     }
 
     if (type === 'EPD' && !product.sustainability.hasEpd) {
-      throw new NotFoundException(`EPD not available for product "${slug}"`);
+      throw new NotFoundError(`EPD not available for product "${slug}"`);
     }
 
     return generateProductDocument(product, type as PreviewableDocumentType);
@@ -132,17 +127,17 @@ export class ProductsService {
   compare(rawSlugs: string | string[] | undefined): Product[] {
     const slugs = this.parseSlugs(rawSlugs);
     if (slugs.length === 0) {
-      throw new BadRequestException('At least one slug is required');
+      throw new BadRequestError({ message: 'At least one slug is required' });
     }
     if (slugs.length > 3) {
-      throw new BadRequestException('Compare supports a maximum of 3 products');
+      throw new BadRequestError({ message: 'Compare supports a maximum of 3 products' });
     }
 
     const products = this.repository.findBySlugs(slugs);
     if (products.length !== slugs.length) {
       const found = new Set(products.map((p) => p.slug));
       const missing = slugs.filter((slug) => !found.has(slug));
-      throw new NotFoundException(`Products not found: ${missing.join(', ')}`);
+      throw new NotFoundError(`Products not found: ${missing.join(', ')}`);
     }
 
     return slugs.map((slug) => products.find((p) => p.slug === slug)!);
