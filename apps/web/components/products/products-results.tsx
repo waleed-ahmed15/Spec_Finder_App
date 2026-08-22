@@ -32,12 +32,21 @@ import type { SortOption } from '@specfinder/shared';
 
 function ProductCardSkeleton() {
   return (
-    <div className="rounded border border-rule bg-surface-raised p-4">
-      <Skeleton className="mb-3 h-16 w-16" />
-      <Skeleton className="mb-2 h-5 w-2/3" />
-      <Skeleton className="mb-4 h-4 w-full" />
-      <Skeleton className="mb-2 h-20 w-full" />
-      <Skeleton className="h-9 w-40" />
+    <div className="overflow-hidden rounded border border-rule bg-surface-raised">
+      <div className="flex gap-3 px-4 pt-4 pb-3">
+        <Skeleton className="size-14 shrink-0 rounded" />
+        <div className="flex-1 space-y-2">
+          <Skeleton className="h-3 w-24" />
+          <Skeleton className="h-5 w-3/4" />
+          <Skeleton className="h-4 w-full" />
+        </div>
+      </div>
+      <Skeleton className="h-20 w-full rounded-none" />
+      <Skeleton className="mx-4 mt-2 h-3 w-2/3" />
+      <div className="mt-3 flex gap-2 border-t border-rule px-4 py-3">
+        <Skeleton className="h-10 flex-1" />
+        <Skeleton className="h-10 flex-1" />
+      </div>
     </div>
   );
 }

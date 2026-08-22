@@ -52,14 +52,38 @@ export function facePaperColor(facePaper: string): string {
 export function facePaperLabel(facePaper: string): string {
   switch (facePaper) {
     case 'pink':
-      return 'Fire-rated board';
+      return 'Fire-rated';
     case 'green':
-      return 'Moisture-resistant board';
+      return 'Moisture-resistant';
     case 'ivory':
-      return 'Standard board';
+      return 'Standard';
     case 'grey':
-      return 'Impact-resistant board';
+      return 'Impact-resistant';
     default:
-      return 'Unspecified face';
+      return 'Unspecified';
   }
 }
+
+export function formatMatchValue(
+  key: string,
+  value: number | string | null,
+): string {
+  if (value === null) return '—';
+  if (key === 'fireResistanceMin' && typeof value === 'number') return formatFireRating(value);
+  if (key === 'soundReductionRw' && typeof value === 'number') return formatRw(value);
+  if (key === 'moistureClass') return formatMoisture(String(value));
+  if (key === 'thicknessMax' && typeof value === 'number') return `${value} mm`;
+  return String(value);
+}
+
+export function formatMatchRequirement(
+  key: string,
+  required: number | string,
+): string {
+  if (key === 'fireResistanceMin') return `EI ${required}`;
+  if (key === 'soundReductionRw') return `≥ ${required} dB`;
+  if (key === 'moistureClass') return formatMoisture(String(required));
+  if (key === 'thicknessMax') return `≤ ${required} mm`;
+  return String(required);
+}
+
