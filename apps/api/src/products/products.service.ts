@@ -15,6 +15,11 @@ import {
 } from '@specfinder/shared';
 import { ProductsRepository } from './products.repository';
 import { buildMatch, rankProducts } from './ranking';
+import {
+  generateProductDocument,
+  isDownloadableDocumentType,
+  type DownloadableDocumentType,
+} from './document-generator';
 
 @Injectable()
 export class ProductsService {
@@ -104,6 +109,26 @@ export class ProductsService {
       throw new NotFoundException(`Product "${slug}" not found`);
     }
     return product;
+  }
+
+  getDocument(slug: string, type: string) {
+    if (!isDownloadableDocumentType(type)) {
+      throw new BadRequestException(
+        `Document type "${type}" is not available for download in this prototype`,
+      );
+    }
+
+    const product = this.findBySlug(slug);
+    const document = product.documents.find((entry) => entry.type === type);
+    if (!document) {
+      throw new NotFoundException(`Document "${type}" not found for product "${slug}"`);
+    }
+
+    if (type === 'EPD' && !product.sustainability.hasEpd) {
+      throw new NotFoundException(`EPD not available for product "${slug}"`);
+    }
+
+    return generateProductDocument(product, type as DownloadableDocumentType);
   }
 
   compare(rawSlugs: string | string[] | undefined): Product[] {

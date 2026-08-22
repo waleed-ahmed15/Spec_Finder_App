@@ -2,7 +2,7 @@
 
 import { toast } from 'sonner';
 import { Check, Download, GitCompare } from 'lucide-react';
-import type { Product } from '@specfinder/shared';
+import type { DocumentType, Product } from '@specfinder/shared';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -17,6 +17,10 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { DocumentTypeBadge, FieldLabel } from '@/components/glossary/term-tooltip';
 import { useSpecification } from '@/hooks/use-specification';
+import {
+  isDownloadableDocumentType,
+  openProductDocument,
+} from '@/lib/document-download';
 import {
   facePaperColor,
   facePaperLabel,
@@ -106,6 +110,18 @@ function PerformanceMetrics({
   );
 }
 
+function handleDocumentAction(product: Product, type: DocumentType) {
+  if (isDownloadableDocumentType(type)) {
+    openProductDocument(product.slug, type);
+    toast.success(`Opening ${type} document`);
+    return;
+  }
+
+  toast.message('Download not wired in this prototype', {
+    description: 'CAD and BIM objects would link to the asset management service in production.',
+  });
+}
+
 export function ProductDetailActions({
   product,
   className,
@@ -122,10 +138,8 @@ export function ProductDetailActions({
     toast.success('Added to specification');
   };
 
-  const handleDownloadStub = () => {
-    toast.message('Download not wired in this prototype', {
-      description: 'In production this would link to the PIM document service.',
-    });
+  const handleDownloadDatasheet = () => {
+    handleDocumentAction(product, 'TDS');
   };
 
   return (
@@ -151,7 +165,7 @@ export function ProductDetailActions({
           <GitCompare className="size-4" aria-hidden />
           {inCompare ? 'In compare' : 'Compare'}
         </Button>
-        <Button variant="outline" onClick={handleDownloadStub} className="min-h-10">
+        <Button variant="outline" onClick={handleDownloadDatasheet} className="min-h-10">
           <Download className="size-4" aria-hidden />
           Datasheet
         </Button>
@@ -301,6 +315,7 @@ function ProductDetailTabs({
               <TableHead>Size</TableHead>
               <TableHead>Pages</TableHead>
               <TableHead>Updated</TableHead>
+              <TableHead className="w-[100px]">Action</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -315,6 +330,17 @@ function ProductDetailTabs({
                 <TableCell className="font-data tabular-nums">{formatFileSize(document.sizeKb)}</TableCell>
                 <TableCell className="font-data tabular-nums">{document.pages ?? '-'}</TableCell>
                 <TableCell className="font-data tabular-nums">{formatDate(document.updatedAt)}</TableCell>
+                <TableCell>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="min-h-9"
+                    onClick={() => handleDocumentAction(product, document.type)}
+                  >
+                    <Download className="size-4" aria-hidden />
+                    {isDownloadableDocumentType(document.type) ? 'Open' : 'Preview'}
+                  </Button>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -361,10 +387,8 @@ export function ProductDetailPanel({
     toast.success('Added to specification');
   };
 
-  const handleDownloadStub = () => {
-    toast.message('Download not wired in this prototype', {
-      description: 'In production this would link to the PIM document service.',
-    });
+  const handleDownloadDatasheet = () => {
+    handleDocumentAction(product, 'TDS');
   };
 
   if (isSheet) {
@@ -440,7 +464,7 @@ export function ProductDetailPanel({
             <Button variant="outline" onClick={() => toggleCompare(product.slug)} className="min-h-10">
               {isInCompare(product.slug) ? 'In compare' : 'Add to compare'}
             </Button>
-            <Button variant="ghost" onClick={handleDownloadStub} className="min-h-10">
+            <Button variant="ghost" onClick={handleDownloadDatasheet} className="min-h-10">
               <Download className="size-4" />
               Download datasheet
             </Button>

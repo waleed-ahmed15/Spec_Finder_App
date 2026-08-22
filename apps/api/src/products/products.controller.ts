@@ -1,4 +1,5 @@
-import { Controller, Get, Param, Query } from '@nestjs/common';
+import { Controller, Get, Param, Query, Res } from '@nestjs/common';
+import type { Response } from 'express';
 import { ProductsService } from './products.service';
 
 @Controller('products')
@@ -13,6 +14,18 @@ export class ProductsController {
   @Get('compare')
   compare(@Query('slugs') slugs: string | string[] | undefined) {
     return this.productsService.compare(slugs);
+  }
+
+  @Get(':slug/documents/:type')
+  getDocument(
+    @Param('slug') slug: string,
+    @Param('type') type: string,
+    @Res() res: Response,
+  ) {
+    const document = this.productsService.getDocument(slug, type);
+    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    res.setHeader('Content-Disposition', `inline; filename="${document.filename}"`);
+    return res.send(document.html);
   }
 
   @Get(':slug')

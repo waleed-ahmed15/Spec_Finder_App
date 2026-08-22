@@ -28,6 +28,7 @@ import {
 } from '@/lib/format';
 import type { GlossaryTermId } from '@/lib/glossary';
 import { MAX_COMPARE_PRODUCTS } from '@/lib/compare-url';
+import { openProductDocument } from '@/lib/document-download';
 import { cn } from '@/lib/utils';
 import { useSpecification } from '@/hooks/use-specification';
 
@@ -255,6 +256,14 @@ function CompareProductColumn({
           </Button>
           <Button variant="ghost" size="sm" className="min-h-9 w-full" asChild>
             <Link href={`/products?product=${product.slug}`}>View full details</Link>
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="min-h-9 w-full"
+            onClick={() => openProductDocument(product.slug, 'TDS')}
+          >
+            Open datasheet
           </Button>
         </div>
       </div>
