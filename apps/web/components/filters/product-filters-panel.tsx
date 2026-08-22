@@ -94,13 +94,7 @@ export function ProductFiltersPanel() {
                 id={`fire-${option.value || 'none'}`}
                 aria-label={option.label}
               />
-              <Label htmlFor={`fire-${option.value || 'none'}`}>
-                {option.value ? (
-                  <TermTooltip term="EI">{option.label}</TermTooltip>
-                ) : (
-                  option.label
-                )}
-              </Label>
+              <Label htmlFor={`fire-${option.value || 'none'}`}>{option.label}</Label>
             </div>
           ))}
         </RadioGroup>
@@ -109,8 +103,7 @@ export function ProductFiltersPanel() {
       <FilterSection title="Sound insulation" term="Rw" value="rw">
         <div className="space-y-3">
           <p className="font-data text-sm">
-            <TermTooltip term="Rw">Rw</TermTooltip> ≥ <span className="text-primary">{rwValue}</span>{' '}
-            dB
+            Rw ≥ <span className="text-primary">{rwValue}</span> dB
           </p>
           <Slider
             min={30}

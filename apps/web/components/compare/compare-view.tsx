@@ -40,13 +40,11 @@ const ROWS: Array<{
   {
     key: 'moisture',
     label: 'Moisture class',
-    term: 'H2',
     getValue: (p) => (p.performance.moistureClass === 'none' ? 'Dry' : p.performance.moistureClass),
   },
   {
     key: 'variants',
     label: 'Variant count',
-    term: 'variants',
     getValue: (p) => String(p.variants.length),
   },
   {

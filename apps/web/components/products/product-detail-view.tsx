@@ -19,7 +19,6 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import {
   DocumentTypeBadge,
   FieldLabel,
-  TermTooltip,
 } from '@/components/glossary/term-tooltip';
 import { useSpecification } from '@/hooks/use-specification';
 import {
@@ -90,9 +89,7 @@ export function ProductDetailView({ product }: { product: Product }) {
               </Badge>
             ))}
             {product.sustainability.hasEpd && (
-              <Badge variant="outline">
-                <TermTooltip term="EPD">EPD available</TermTooltip>
-              </Badge>
+              <Badge variant="outline">EPD available</Badge>
             )}
           </div>
         </div>
@@ -156,7 +153,6 @@ export function ProductDetailView({ product }: { product: Product }) {
           <dl className="grid gap-3 sm:grid-cols-2">
             <TechnicalField
               label="Reaction to fire"
-              term="reactionToFire"
               value={product.performance.reactionToFireClass ?? '-'}
             />
             <TechnicalField
@@ -183,11 +179,7 @@ export function ProductDetailView({ product }: { product: Product }) {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead>
-                    <FieldLabel term="materialNumber" variant="default">
-                      Material no.
-                    </FieldLabel>
-                  </TableHead>
+                  <TableHead>Material no.</TableHead>
                   <TableHead>Width</TableHead>
                   <TableHead>Length</TableHead>
                   <TableHead>Thickness</TableHead>
@@ -256,7 +248,6 @@ export function ProductDetailView({ product }: { product: Product }) {
           <dl className="grid gap-3 sm:grid-cols-2">
             <TechnicalField
               label="Recycled content"
-              term="recycledContent"
               value={
                 product.sustainability.recycledContentPct !== null
                   ? `${product.sustainability.recycledContentPct}%`
@@ -275,9 +266,7 @@ export function ProductDetailView({ product }: { product: Product }) {
       {primaryVariant && (
         <p className="mt-6 text-sm text-ink-muted">
           Primary variant:{' '}
-          <TermTooltip term="materialNumber">
-            <span className="font-data">{primaryVariant.materialNumber}</span>
-          </TermTooltip>
+          <span className="font-data">{primaryVariant.materialNumber}</span>
         </p>
       )}
 

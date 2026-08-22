@@ -11,7 +11,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { TermTooltip } from '@/components/glossary/term-tooltip';
 import { useSpecification } from '@/hooks/use-specification';
 import { exportSpecificationCsv, exportSpecificationMarkdown } from '@/lib/export-specification';
 import { formatFireRating, formatRw } from '@/lib/format';
@@ -74,13 +73,9 @@ export function SpecificationSheet({ count }: { count: number }) {
                         <p className="font-display font-semibold">{product.name}</p>
                         <p className="text-ink-muted">{product.family}</p>
                         <p className="font-data mt-1 text-xs tabular-nums">
-                          <TermTooltip term="EI">
-                            <span>{formatFireRating(product.performance.fireResistanceMin)}</span>
-                          </TermTooltip>
+                          {formatFireRating(product.performance.fireResistanceMin)}
                           <span aria-hidden> · </span>
-                          <TermTooltip term="Rw">
-                            <span>{formatRw(product.performance.soundReductionRw)}</span>
-                          </TermTooltip>
+                          {formatRw(product.performance.soundReductionRw)}
                         </p>
                       </div>
                       <Button
