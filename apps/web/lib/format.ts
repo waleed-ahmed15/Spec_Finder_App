@@ -4,7 +4,7 @@ export function formatFireRating(minutes: number | null): string {
 }
 
 export function formatRw(value: number | null): string {
-  if (value === null) return '—';
+  if (value === null) return '-';
   return `Rw ${value} dB`;
 }
 
@@ -68,7 +68,7 @@ export function formatMatchValue(
   key: string,
   value: number | string | null,
 ): string {
-  if (value === null) return '—';
+  if (value === null) return '-';
   if (key === 'fireResistanceMin' && typeof value === 'number') return formatFireRating(value);
   if (key === 'soundReductionRw' && typeof value === 'number') return formatRw(value);
   if (key === 'moistureClass') return formatMoisture(String(value));

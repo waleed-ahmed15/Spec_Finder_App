@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Substrate — gypsum board paper, cool not cream */
+  /* Substrate - gypsum board paper, cool not cream */
   --surface: #fbfbfa;
   --surface-raised: #ffffff;
   --surface-sunken: #f1f2f0;
@@ -15,12 +15,12 @@
   --ink-muted: #5b6167;
   --rule: #dfe1de;
 
-  /* Action — derived from Knauf cyan #009FE3, darkened for contrast compliance */
+  /* Action - derived from Knauf cyan #009FE3, darkened for contrast compliance */
   --primary: #0077a8;
   --primary-hover: #005e86;
   --primary-tint: #e8f4f9;
 
-  /* Face paper codes — the signature */
+  /* Face paper codes - the signature */
   --face-fire: #d6336c;
   --face-moisture: #2f9e68;
   --face-standard: #b8a88a;

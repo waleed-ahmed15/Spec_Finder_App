@@ -1,13 +1,13 @@
 # SpecFinder
 
-Building professionals do not shop for products — they discharge obligations. SpecFinder is a **requirement-led specification finder** for the fictional Aurelith building materials catalogue: set fire, acoustic, and exposure requirements, get the leanest compliant options, and export a specification — no prices, no cart.
+Building professionals do not shop for products - they discharge obligations. SpecFinder is a **requirement-led specification finder** for the fictional Aurelith building materials catalogue: set fire, acoustic, and exposure requirements, get the leanest compliant options, and export a specification - no prices, no cart.
 
 ## Live demo
 
 Deploy locally (see [Quickstart](#quickstart)). Production targets:
 
-- **Web:** Vercel — `apps/web`
-- **API:** Render — `apps/api`
+- **Web:** Vercel - `apps/web`
+- **API:** Render - `apps/api`
 
 ## Quickstart
 
@@ -32,11 +32,11 @@ pnpm test:e2e   # starts API + web automatically
 
 ## Investigation
 
-Knauf Digital builds software for a building materials group whose purchase cycle is specification-led: architects name systems in tender documents (_Leistungsverzeichnis_); contractors must supply those products. Real Knauf pages carry no prices — the outcome is enquiry and specification, not checkout.
+Knauf Digital builds software for a building materials group whose purchase cycle is specification-led: architects name systems in tender documents (_Leistungsverzeichnis_); contractors must supply those products. Real Knauf pages carry no prices - the outcome is enquiry and specification, not checkout.
 
-**Primary user — specifier:** desktop, needs performance data, standards, and lean compliance (over-specification costs the client).
+**Primary user - specifier:** desktop, needs performance data, standards, and lean compliance (over-specification costs the client).
 
-**Secondary user — installer:** mobile, searches by **material number**, needs weights and pallet data.
+**Secondary user - installer:** mobile, searches by **material number**, needs weights and pallet data.
 
 Competitor patterns (e.g. Rigips/Systemfinder-style tools) favour requirement input over category browsing. SpecFinder mirrors that: threshold filters (`fireMin=60` returns EI 60, 90, 120), least-over-specification ranking, and export.
 
@@ -64,7 +64,7 @@ Nest.js models a future PIM boundary (`products.repository.ts` swap point). Filt
 
 ## Data and sources
 
-- **Brand:** Aurelith (fictional — no Knauf trademarks)
+- **Brand:** Aurelith (fictional - no Knauf trademarks)
 - **40 products** with realistic EN-style fields, invented names and material numbers
 - **Edge cases:** null fire ratings, missing EPDs, single-variant and seven-variant products
 - **Images:** inline SVG placeholders tinted by face paper
@@ -75,7 +75,7 @@ Limitations: product-level only (not full wall assemblies W111/W112); documents 
 
 **In v1:** product list, search (incl. material numbers), threshold filters, detail page, match reasoning, compare (3), specification list + export, URL-synced state.
 
-**Out of v1:** pricing, auth, i18n, live PIM, real BIM downloads, system-level assembly config — documented here and in [DECISIONS.md](./DECISIONS.md).
+**Out of v1:** pricing, auth, i18n, live PIM, real BIM downloads, system-level assembly config - documented here and in [DECISIONS.md](./DECISIONS.md).
 
 ## Accessibility
 
@@ -91,7 +91,7 @@ Limitations: product-level only (not full wall assemblies W111/W112); documents 
 | -------------------------------------- | ------ | ------------------------------ |
 | `--primary` (#0077A8) on white         | 4.9:1  | AA body                        |
 | `--ink-muted` (#5B6167) on `--surface` | 5.9:1  | AA body                        |
-| Knauf cyan `#009FE3` on white          | ~2.6:1 | Fails AA — display/accent only |
+| Knauf cyan `#009FE3` on white          | ~2.6:1 | Fails AA - display/accent only |
 
 Run axe DevTools on `/products` and `/products/[slug]` before submission.
 
@@ -101,7 +101,7 @@ Run axe DevTools on `/products` and `/products/[slug]` before submission.
 | ----- | ---------------------------------------------------------- |
 | Unit  | `ranking.ts`, `format.ts`, `query-params.ts`               |
 | API   | Vitest ranking tests                                       |
-| E2E   | Playwright — filter journey, material search, mobile sheet |
+| E2E   | Playwright - filter journey, material search, mobile sheet |
 
 Not covered: visual regression, load testing, real PIM integration.
 

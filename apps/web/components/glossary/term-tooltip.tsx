@@ -39,7 +39,7 @@ export function TermTooltip({ term, children, className, asLabel = false }: Term
       </TooltipTrigger>
       <TooltipContent side="top" className="max-w-xs text-left leading-snug">
         <span className="font-medium">{display}</span>
-        <span className="text-background/90"> — {definition}</span>
+        <span className="text-background/90"> - {definition}</span>
       </TooltipContent>
     </Tooltip>
   );

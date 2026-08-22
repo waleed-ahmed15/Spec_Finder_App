@@ -240,7 +240,7 @@ export function ProductCard({
         </div>
       </div>
 
-      {/* Evidence — the card's reason to exist */}
+      {/* Evidence - the card's reason to exist */}
       <ComplianceStrip item={item} hasRequirements={hasRequirements} />
 
       {primaryVariant && (

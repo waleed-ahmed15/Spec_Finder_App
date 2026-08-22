@@ -13,7 +13,7 @@ export function exportSpecificationMarkdown(items: Product[]): string {
     lines.push(
       `- Moisture: ${product.performance.moistureClass === 'none' ? 'Dry' : product.performance.moistureClass}`,
     );
-    lines.push(`- Standards: ${product.standards.join(', ') || '—'}`);
+    lines.push(`- Standards: ${product.standards.join(', ') || '-'}`);
     lines.push('- Material numbers:');
     for (const variant of product.variants) {
       lines.push(`  - ${variant.materialNumber} (${variant.thicknessMm} mm)`);

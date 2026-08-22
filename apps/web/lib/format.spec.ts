@@ -9,7 +9,7 @@ describe('format', () => {
 
   it('formats Rw values', () => {
     expect(formatRw(54)).toBe('Rw 54 dB');
-    expect(formatRw(null)).toBe('—');
+    expect(formatRw(null)).toBe('-');
   });
 
   it('formats dimensions with tabular-friendly output', () => {

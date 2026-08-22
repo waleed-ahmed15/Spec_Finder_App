@@ -157,20 +157,20 @@ export function ProductDetailView({ product }: { product: Product }) {
             <TechnicalField
               label="Reaction to fire"
               term="reactionToFire"
-              value={product.performance.reactionToFireClass ?? '—'}
+              value={product.performance.reactionToFireClass ?? '-'}
             />
             <TechnicalField
               label="Impact resistance"
-              value={product.performance.impactResistanceClass ?? '—'}
+              value={product.performance.impactResistanceClass ?? '-'}
             />
             <TechnicalField
               label="Thermal conductivity λ"
               term="lambda"
-              value={product.performance.thermalConductivity ?? '—'}
+              value={product.performance.thermalConductivity ?? '-'}
             />
             <TechnicalField
               label="Max height"
-              value={product.performance.maxHeightM ? `${product.performance.maxHeightM} m` : '—'}
+              value={product.performance.maxHeightM ? `${product.performance.maxHeightM} m` : '-'}
             />
             <TechnicalField label="Edge profile" value={product.edgeProfile} />
             <TechnicalField label="Area of application" value={product.areaOfApplication} />
@@ -210,7 +210,7 @@ export function ProductDetailView({ product }: { product: Product }) {
                       {variant.weightPerSqmKg}
                     </TableCell>
                     <TableCell className="font-data tabular-nums">
-                      {variant.piecesPerPallet ?? '—'}
+                      {variant.piecesPerPallet ?? '-'}
                     </TableCell>
                   </TableRow>
                 ))}
@@ -242,7 +242,7 @@ export function ProductDetailView({ product }: { product: Product }) {
                   <TableCell className="font-data tabular-nums">
                     {formatFileSize(document.sizeKb)}
                   </TableCell>
-                  <TableCell className="font-data tabular-nums">{document.pages ?? '—'}</TableCell>
+                  <TableCell className="font-data tabular-nums">{document.pages ?? '-'}</TableCell>
                   <TableCell className="font-data tabular-nums">
                     {formatDate(document.updatedAt)}
                   </TableCell>
@@ -260,7 +260,7 @@ export function ProductDetailView({ product }: { product: Product }) {
               value={
                 product.sustainability.recycledContentPct !== null
                   ? `${product.sustainability.recycledContentPct}%`
-                  : '—'
+                  : '-'
               }
             />
             <TechnicalField

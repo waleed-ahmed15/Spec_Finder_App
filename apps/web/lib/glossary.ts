@@ -17,8 +17,8 @@ export type GlossaryTermId =
 
 export const GLOSSARY: Record<GlossaryTermId, string> = {
   EI: 'Fire resistance period in minutes for integrity and insulation.',
-  Rw: 'Weighted sound reduction index in decibels — higher values mean better sound insulation.',
-  lambda: 'Thermal conductivity in watts per metre kelvin — lower values mean better insulation.',
+  Rw: 'Weighted sound reduction index in decibels - higher values mean better sound insulation.',
+  lambda: 'Thermal conductivity in watts per metre kelvin - lower values mean better insulation.',
   H2: 'Moisture class for damp interior areas such as kitchens and bathrooms.',
   H3: 'Moisture class for wet rooms with direct moisture or tile exposure.',
   DoP: 'Declaration of Performance required under the Construction Products Regulation.',
@@ -28,7 +28,7 @@ export const GLOSSARY: Record<GlossaryTermId, string> = {
   CAD: 'CAD detail drawings for inclusion in project documentation.',
   BIM: 'BIM object for use in digital building models (stubbed in this prototype).',
   reactionToFire:
-    'Reaction to fire classification per EN 13501-1 — describes how a material contributes to fire.',
+    'Reaction to fire classification per EN 13501-1 - describes how a material contributes to fire.',
   materialNumber: 'Manufacturer SKU used by installers and merchants to order the exact variant.',
   recycledContent: 'Percentage of pre- or post-consumer recycled material in the product.',
   variants:
