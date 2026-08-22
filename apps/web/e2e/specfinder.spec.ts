@@ -13,7 +13,7 @@ test.describe('SpecFinder journeys', () => {
       .first()
       .click();
     await page.getByRole('button', { name: /^Specification/i }).click();
-    await expect(page.getByRole('dialog', { name: 'Your specification' })).toBeVisible();
+    await expect(page.getByRole('dialog', { name: 'Specification' })).toBeVisible();
   });
 
   test('material number search returns parent product', async ({ page }) => {
