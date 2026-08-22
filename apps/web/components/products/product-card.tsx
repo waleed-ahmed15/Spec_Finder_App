@@ -6,6 +6,7 @@ import { toast } from 'sonner';
 import type { MatchCriterion, ProductListItem } from '@specfinder/shared';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { FieldLabel, TermTooltip } from '@/components/glossary/term-tooltip';
 import {
   facePaperColor,
   facePaperLabel,
@@ -17,6 +18,7 @@ import {
   formatRw,
   formatWeightPerSqm,
 } from '@/lib/format';
+import { criterionGlossaryTerm } from '@/lib/glossary';
 import { useSpecification } from '@/hooks/use-specification';
 
 function FacePaperBadge({ facePaper }: { facePaper: string }) {
@@ -61,6 +63,8 @@ function MatchCriterionRow({ criterion }: { criterion: MatchCriterion }) {
         : `meets your ${formatMatchRequirement(criterion.key, criterion.required)}`;
   }
 
+  const glossaryTerm = criterionGlossaryTerm(criterion.key, criterion.actual);
+
   return (
     <li className="flex items-baseline justify-between gap-3 border-b border-rule/60 py-1.5 last:border-0">
       <span className="flex items-center gap-2 font-data text-sm tabular-nums">
@@ -71,7 +75,13 @@ function MatchCriterionRow({ criterion }: { criterion: MatchCriterion }) {
           )}
           aria-hidden
         />
-        <span className={isMissing ? 'text-ink-muted line-through' : 'text-ink'}>{value}</span>
+        {glossaryTerm ? (
+          <TermTooltip term={glossaryTerm}>
+            <span className={isMissing ? 'text-ink-muted line-through' : 'text-ink'}>{value}</span>
+          </TermTooltip>
+        ) : (
+          <span className={isMissing ? 'text-ink-muted line-through' : 'text-ink'}>{value}</span>
+        )}
       </span>
       <span
         className={cn(
@@ -109,20 +119,26 @@ function ComplianceStrip({
   }
 
   const { performance } = item.product;
+  const moistureTerm =
+    performance.moistureClass === 'H3'
+      ? ('H3' as const)
+      : performance.moistureClass === 'H2'
+        ? ('H2' as const)
+        : undefined;
+
   const metrics = [
-    { label: 'Fire', value: formatFireRating(performance.fireResistanceMin) },
-    { label: 'Sound', value: formatRw(performance.soundReductionRw) },
-    {
-      label: 'Moisture',
-      value: formatMoisture(performance.moistureClass),
-    },
+    { label: 'Fire', term: 'EI' as const, value: formatFireRating(performance.fireResistanceMin) },
+    { label: 'Sound', term: 'Rw' as const, value: formatRw(performance.soundReductionRw) },
+    { label: 'Moisture', term: moistureTerm, value: formatMoisture(performance.moistureClass) },
   ];
 
   return (
     <div className="grid grid-cols-3 divide-x divide-rule border-y border-rule bg-surface-sunken/40">
       {metrics.map((metric) => (
         <div key={metric.label} className="px-3 py-2.5">
-          <p className="eyebrow mb-0.5">{metric.label}</p>
+          <FieldLabel term={metric.term} className="mb-0.5 block">
+            {metric.label}
+          </FieldLabel>
           <p className="font-data text-sm tabular-nums">{metric.value}</p>
         </div>
       ))}
@@ -153,7 +169,9 @@ function VariantMeta({
         {formatWeightPerSqm(weightPerSqmKg)}
       </p>
       <p className="font-data text-xs text-ink-muted">
-        <span className="text-ink">{materialNumber}</span>
+        <TermTooltip term="materialNumber">
+          <span className="text-ink">{materialNumber}</span>
+        </TermTooltip>
         {variantCount > 1 && (
           <span className="ml-2 rounded bg-surface-sunken px-1.5 py-0.5">
             +{variantCount - 1} sizes

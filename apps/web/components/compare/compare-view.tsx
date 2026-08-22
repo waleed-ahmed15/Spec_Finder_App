@@ -12,25 +12,35 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
+import { FieldLabel } from '@/components/glossary/term-tooltip';
 import { apiClient } from '@/lib/api-client';
 import { facePaperColor, formatFireRating, formatRw } from '@/lib/format';
+import type { GlossaryTermId } from '@/lib/glossary';
 import { useCompareSlugsParam } from '@/hooks/use-specification';
 
-const ROWS: Array<{ key: string; label: string; getValue: (product: Product) => string }> = [
+const ROWS: Array<{
+  key: string;
+  label: string;
+  term?: GlossaryTermId;
+  getValue: (product: Product) => string;
+}> = [
   { key: 'family', label: 'Family', getValue: (p) => p.family },
   {
     key: 'fire',
     label: 'Fire resistance',
+    term: 'EI',
     getValue: (p) => formatFireRating(p.performance.fireResistanceMin),
   },
   {
     key: 'rw',
     label: 'Sound insulation',
+    term: 'Rw',
     getValue: (p) => formatRw(p.performance.soundReductionRw),
   },
   {
     key: 'moisture',
     label: 'Moisture class',
+    term: 'H2',
     getValue: (p) => (p.performance.moistureClass === 'none' ? 'Dry' : p.performance.moistureClass),
   },
   {
@@ -41,6 +51,7 @@ const ROWS: Array<{ key: string; label: string; getValue: (product: Product) => 
   {
     key: 'epd',
     label: 'EPD',
+    term: 'EPD',
     getValue: (p) => (p.sustainability.hasEpd ? 'Yes' : 'No'),
   },
 ];
@@ -102,7 +113,9 @@ export function CompareView() {
                 return (
                   <TableRow key={row.key}>
                     <TableCell className="sticky left-0 z-10 bg-surface-raised font-medium">
-                      {row.label}
+                      <FieldLabel term={row.term} variant="default">
+                        {row.label}
+                      </FieldLabel>
                     </TableCell>
                     {data.map((product, index) => (
                       <TableCell

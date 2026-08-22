@@ -18,24 +18,30 @@ import {
 } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+import { FieldLabel, TermTooltip } from '@/components/glossary/term-tooltip';
 import { APPLICATION_LABELS, CATEGORY_LABELS, FIRE_OPTIONS } from '@/lib/query-params';
 import { useProductFilters } from '@/hooks/use-specification';
+import type { GlossaryTermId } from '@/lib/glossary';
 import type { Application, ProductCategory } from '@specfinder/shared';
 
 function FilterSection({
   title,
+  term,
   children,
   value,
 }: {
   title: string;
+  term?: GlossaryTermId;
   children: React.ReactNode;
   value: string;
 }) {
+  const legend = term ? <FieldLabel term={term}>{title}</FieldLabel> : title;
+
   return (
     <>
       <div className="hidden space-y-3 md:block">
         <fieldset>
-          <legend className="eyebrow mb-2 block">{title}</legend>
+          <legend className="mb-2 block">{legend}</legend>
           {children}
         </fieldset>
       </div>
@@ -76,7 +82,7 @@ export function ProductFiltersPanel() {
         </ToggleGroup>
       </FilterSection>
 
-      <FilterSection title="Fire resistance" value="fire">
+      <FilterSection title="Fire resistance" term="EI" value="fire">
         <RadioGroup
           value={filters.fireMin ? String(filters.fireMin) : ''}
           onValueChange={(value) => setFilters({ fireMin: value ? Number(value) : null, page: 1 })}
@@ -88,16 +94,23 @@ export function ProductFiltersPanel() {
                 id={`fire-${option.value || 'none'}`}
                 aria-label={option.label}
               />
-              <Label htmlFor={`fire-${option.value || 'none'}`}>{option.label}</Label>
+              <Label htmlFor={`fire-${option.value || 'none'}`}>
+                {option.value ? (
+                  <TermTooltip term="EI">{option.label}</TermTooltip>
+                ) : (
+                  option.label
+                )}
+              </Label>
             </div>
           ))}
         </RadioGroup>
       </FilterSection>
 
-      <FilterSection title="Sound insulation" value="rw">
+      <FilterSection title="Sound insulation" term="Rw" value="rw">
         <div className="space-y-3">
           <p className="font-data text-sm">
-            Rw ≥ <span className="text-primary">{rwValue}</span> dB
+            <TermTooltip term="Rw">Rw</TermTooltip> ≥ <span className="text-primary">{rwValue}</span>{' '}
+            dB
           </p>
           <Slider
             min={30}
@@ -106,27 +119,33 @@ export function ProductFiltersPanel() {
             value={[rwValue]}
             onValueChange={([value]) => setFilters({ rwMin: value === 30 ? null : value, page: 1 })}
             aria-valuetext={`${rwValue} decibels`}
-            aria-label="Minimum sound insulation"
+            aria-label="Minimum sound insulation Rw"
           />
         </div>
       </FilterSection>
 
       <FilterSection title="Moisture exposure" value="moisture">
-        <Select
-          value={filters.moisture ?? 'none'}
-          onValueChange={(value) =>
-            setFilters({ moisture: value === 'none' ? null : value, page: 1 })
-          }
-        >
-          <SelectTrigger className="w-full">
-            <SelectValue placeholder="Select exposure" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="none">Dry</SelectItem>
-            <SelectItem value="H2">Damp (H2)</SelectItem>
-            <SelectItem value="H3">Wet (H3)</SelectItem>
-          </SelectContent>
-        </Select>
+        <div className="space-y-2">
+          <Select
+            value={filters.moisture ?? 'none'}
+            onValueChange={(value) =>
+              setFilters({ moisture: value === 'none' ? null : value, page: 1 })
+            }
+          >
+            <SelectTrigger className="w-full" aria-label="Moisture exposure class">
+              <SelectValue placeholder="Select exposure" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="none">Dry</SelectItem>
+              <SelectItem value="H2">Damp (H2)</SelectItem>
+              <SelectItem value="H3">Wet (H3)</SelectItem>
+            </SelectContent>
+          </Select>
+          <p className="text-xs text-ink-muted">
+            <TermTooltip term="H2">H2</TermTooltip> = damp areas ·{' '}
+            <TermTooltip term="H3">H3</TermTooltip> = wet rooms
+          </p>
+        </div>
       </FilterSection>
 
       <FilterSection title="Category" value="category">

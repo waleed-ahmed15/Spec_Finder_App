@@ -16,7 +16,11 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import {
+  DocumentTypeBadge,
+  FieldLabel,
+  TermTooltip,
+} from '@/components/glossary/term-tooltip';
 import { useSpecification } from '@/hooks/use-specification';
 import {
   facePaperColor,
@@ -24,34 +28,39 @@ import {
   formatDate,
   formatFileSize,
   formatFireRating,
+  formatMoisture,
   formatRw,
 } from '@/lib/format';
+import type { GlossaryTermId } from '@/lib/glossary';
 
-function MetricTooltip({ label, children }: { label: string; children: React.ReactNode }) {
-  const definitions: Record<string, string> = {
-    EI: 'Fire resistance period in minutes for integrity and insulation.',
-    Rw: 'Weighted sound reduction index in decibels.',
-    λ: 'Thermal conductivity in watts per metre kelvin.',
-    H2: 'Suitable for damp interior areas such as kitchens.',
-    H3: 'Suitable for wet rooms with direct moisture exposure.',
-    DoP: 'Declaration of Performance under the Construction Products Regulation.',
-    EPD: 'Environmental Product Declaration with lifecycle impact data.',
-  };
-
-  const key = Object.keys(definitions).find((term) => label.includes(term));
-  if (!key) return <>{children}</>;
-
+function TechnicalField({
+  label,
+  term,
+  value,
+}: {
+  label: string;
+  term?: GlossaryTermId;
+  value: React.ReactNode;
+}) {
   return (
-    <Tooltip>
-      <TooltipTrigger asChild>{children}</TooltipTrigger>
-      <TooltipContent>{definitions[key]}</TooltipContent>
-    </Tooltip>
+    <div className="rounded border border-rule p-3">
+      <dt className="mb-1">
+        <FieldLabel term={term}>{label}</FieldLabel>
+      </dt>
+      <dd className="font-data tabular-nums">{value}</dd>
+    </div>
   );
 }
 
 export function ProductDetailView({ product }: { product: Product }) {
   const { addItem, isInSpecification, toggleCompare, isInCompare } = useSpecification();
   const primaryVariant = product.variants[0];
+  const moistureTerm =
+    product.performance.moistureClass === 'H3'
+      ? 'H3'
+      : product.performance.moistureClass === 'H2'
+        ? 'H2'
+        : undefined;
 
   const handleAdd = () => {
     addItem(product);
@@ -80,7 +89,11 @@ export function ProductDetailView({ product }: { product: Product }) {
                 {standard}
               </Badge>
             ))}
-            {product.sustainability.hasEpd && <Badge variant="outline">EPD available</Badge>}
+            {product.sustainability.hasEpd && (
+              <Badge variant="outline">
+                <TermTooltip term="EPD">EPD available</TermTooltip>
+              </Badge>
+            )}
           </div>
         </div>
 
@@ -95,38 +108,32 @@ export function ProductDetailView({ product }: { product: Product }) {
             {facePaperLabel(product.facePaper)}
           </div>
 
-          <div className="mb-6 grid grid-cols-3 gap-4 rounded border border-rule bg-surface-sunken p-4 font-data tabular-nums">
-            <MetricTooltip label="EI">
-              <div>
-                <p className="eyebrow mb-1">Fire</p>
-                <p className="text-lg">{formatFireRating(product.performance.fireResistanceMin)}</p>
-              </div>
-            </MetricTooltip>
-            <MetricTooltip label="Rw">
-              <div>
-                <p className="eyebrow mb-1">Sound</p>
-                <p className="text-lg">{formatRw(product.performance.soundReductionRw)}</p>
-              </div>
-            </MetricTooltip>
+          <dl className="mb-6 grid grid-cols-3 gap-4 rounded border border-rule bg-surface-sunken p-4 font-data tabular-nums">
             <div>
-              <p className="eyebrow mb-1">Moisture</p>
-              <p className="text-lg">
-                {product.performance.moistureClass === 'none'
-                  ? 'Dry'
-                  : product.performance.moistureClass}
-              </p>
+              <FieldLabel term="EI" className="mb-1 block">
+                Fire
+              </FieldLabel>
+              <dd className="text-lg">{formatFireRating(product.performance.fireResistanceMin)}</dd>
             </div>
-          </div>
+            <div>
+              <FieldLabel term="Rw" className="mb-1 block">
+                Sound
+              </FieldLabel>
+              <dd className="text-lg">{formatRw(product.performance.soundReductionRw)}</dd>
+            </div>
+            <div>
+              <FieldLabel term={moistureTerm} className="mb-1 block">
+                Moisture
+              </FieldLabel>
+              <dd className="text-lg">{formatMoisture(product.performance.moistureClass)}</dd>
+            </div>
+          </dl>
 
           <div className="flex flex-wrap gap-2">
             <Button onClick={handleAdd}>
               {isInSpecification(product.id) ? 'Added to specification' : 'Add to specification'}
             </Button>
-            <Button
-              variant="outline"
-              onClick={() => toggleCompare(product.slug)}
-              disabled={!isInCompare(product.slug) && false}
-            >
+            <Button variant="outline" onClick={() => toggleCompare(product.slug)}>
               {isInCompare(product.slug) ? 'In compare' : 'Add to compare'}
             </Button>
             <Button variant="ghost" onClick={handleDownloadStub}>
@@ -147,22 +154,26 @@ export function ProductDetailView({ product }: { product: Product }) {
 
         <TabsContent value="technical" className="mt-4">
           <dl className="grid gap-3 sm:grid-cols-2">
-            {[
-              ['Reaction to fire', product.performance.reactionToFireClass ?? '—'],
-              ['Impact resistance', product.performance.impactResistanceClass ?? '—'],
-              ['Thermal conductivity λ', product.performance.thermalConductivity ?? '—'],
-              [
-                'Max height',
-                product.performance.maxHeightM ? `${product.performance.maxHeightM} m` : '—',
-              ],
-              ['Edge profile', product.edgeProfile],
-              ['Area of application', product.areaOfApplication],
-            ].map(([label, value]) => (
-              <div key={label} className="rounded border border-rule p-3">
-                <dt className="eyebrow mb-1">{label}</dt>
-                <dd className="font-data tabular-nums">{value}</dd>
-              </div>
-            ))}
+            <TechnicalField
+              label="Reaction to fire"
+              term="reactionToFire"
+              value={product.performance.reactionToFireClass ?? '—'}
+            />
+            <TechnicalField
+              label="Impact resistance"
+              value={product.performance.impactResistanceClass ?? '—'}
+            />
+            <TechnicalField
+              label="Thermal conductivity λ"
+              term="lambda"
+              value={product.performance.thermalConductivity ?? '—'}
+            />
+            <TechnicalField
+              label="Max height"
+              value={product.performance.maxHeightM ? `${product.performance.maxHeightM} m` : '—'}
+            />
+            <TechnicalField label="Edge profile" value={product.edgeProfile} />
+            <TechnicalField label="Area of application" value={product.areaOfApplication} />
           </dl>
           <p className="mt-4 text-sm text-ink-muted">{product.description}</p>
         </TabsContent>
@@ -172,7 +183,11 @@ export function ProductDetailView({ product }: { product: Product }) {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead>Material no.</TableHead>
+                  <TableHead>
+                    <FieldLabel term="materialNumber" variant="default">
+                      Material no.
+                    </FieldLabel>
+                  </TableHead>
                   <TableHead>Width</TableHead>
                   <TableHead>Length</TableHead>
                   <TableHead>Thickness</TableHead>
@@ -219,7 +234,9 @@ export function ProductDetailView({ product }: { product: Product }) {
               {product.documents.map((document) => (
                 <TableRow key={`${document.type}-${document.title}`}>
                   <TableCell>
-                    <Badge variant="outline">{document.type}</Badge>
+                    <Badge variant="outline">
+                      <DocumentTypeBadge type={document.type} />
+                    </Badge>
                   </TableCell>
                   <TableCell>{document.title}</TableCell>
                   <TableCell className="font-data tabular-nums">
@@ -237,25 +254,30 @@ export function ProductDetailView({ product }: { product: Product }) {
 
         <TabsContent value="sustainability" className="mt-4">
           <dl className="grid gap-3 sm:grid-cols-2">
-            <div className="rounded border border-rule p-3">
-              <dt className="eyebrow mb-1">Recycled content</dt>
-              <dd className="font-data tabular-nums">
-                {product.sustainability.recycledContentPct !== null
+            <TechnicalField
+              label="Recycled content"
+              term="recycledContent"
+              value={
+                product.sustainability.recycledContentPct !== null
                   ? `${product.sustainability.recycledContentPct}%`
-                  : '—'}
-              </dd>
-            </div>
-            <div className="rounded border border-rule p-3">
-              <dt className="eyebrow mb-1">EPD</dt>
-              <dd>{product.sustainability.hasEpd ? 'Available' : 'Not available'}</dd>
-            </div>
+                  : '—'
+              }
+            />
+            <TechnicalField
+              label="EPD"
+              term="EPD"
+              value={product.sustainability.hasEpd ? 'Available' : 'Not available'}
+            />
           </dl>
         </TabsContent>
       </Tabs>
 
       {primaryVariant && (
         <p className="mt-6 text-sm text-ink-muted">
-          Primary variant: <span className="font-data">{primaryVariant.materialNumber}</span>
+          Primary variant:{' '}
+          <TermTooltip term="materialNumber">
+            <span className="font-data">{primaryVariant.materialNumber}</span>
+          </TermTooltip>
         </p>
       )}
 

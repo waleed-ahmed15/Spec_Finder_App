@@ -25,6 +25,7 @@ import { ActiveFilterChips } from '@/components/filters/active-filter-chips';
 import { ProductFiltersPanel } from '@/components/filters/product-filters-panel';
 import { ProductSearch } from '@/components/filters/product-search';
 import { ProductCard } from '@/components/products/product-card';
+import { TermTooltip } from '@/components/glossary/term-tooltip';
 import { apiClient } from '@/lib/api-client';
 import { queryToSearchParams, SORT_LABELS } from '@/lib/query-params';
 import { useProductFilters } from '@/hooks/use-specification';
@@ -69,10 +70,21 @@ function EmptyState({
           No products meet your requirements
         </h2>
         <p className="mb-4 text-ink-muted">
-          No products meet Rw ≥ {rwMin} dB with EI {fireMin}. Try lowering the acoustic requirement
-          to {suggestion} dB.
+          No products meet{' '}
+          <TermTooltip term="Rw">
+            <span>Rw ≥ {rwMin} dB</span>
+          </TermTooltip>{' '}
+          with{' '}
+          <TermTooltip term="EI">
+            <span>EI {fireMin}</span>
+          </TermTooltip>
+          . Try lowering the acoustic requirement to {suggestion} dB.
         </p>
-        {onRelaxRw && <Button onClick={onRelaxRw}>Set Rw to ≥ {suggestion} dB</Button>}
+        {onRelaxRw && (
+          <Button onClick={onRelaxRw}>
+            Set <TermTooltip term="Rw">Rw</TermTooltip> to ≥ {suggestion} dB
+          </Button>
+        )}
       </div>
     );
   }
