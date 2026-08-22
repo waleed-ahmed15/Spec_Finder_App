@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 import { Archivo, IBM_Plex_Mono, IBM_Plex_Sans } from 'next/font/google';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { AppProviders } from '@/components/providers/app-providers';
+import { Toaster } from '@/components/ui/sonner';
 import './globals.css';
+
+export const dynamic = 'force-dynamic';
 
 const archivo = Archivo({
   variable: '--font-display',
@@ -33,7 +37,10 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       className={`${archivo.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} h-full`}
     >
       <body className="min-h-full flex flex-col font-sans">
-        <TooltipProvider delayDuration={300}>{children}</TooltipProvider>
+        <AppProviders>
+          <TooltipProvider delayDuration={300}>{children}</TooltipProvider>
+          <Toaster />
+        </AppProviders>
       </body>
     </html>
   );
