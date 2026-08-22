@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import {
   Accordion,
   AccordionContent,
@@ -57,7 +58,8 @@ function FilterSection({
 
 export function ProductFiltersPanel() {
   const [filters, setFilters] = useProductFilters();
-  const rwValue = filters.rwMin ?? 30;
+  const [rwDraft, setRwDraft] = useState<number | null>(null);
+  const rwValue = rwDraft ?? filters.rwMin ?? 30;
 
   return (
     <div className="space-y-5">
@@ -110,7 +112,11 @@ export function ProductFiltersPanel() {
             max={65}
             step={1}
             value={[rwValue]}
-            onValueChange={([value]) => setFilters({ rwMin: value === 30 ? null : value, page: 1 })}
+            onValueChange={([value]) => setRwDraft(value)}
+            onValueCommit={([value]) => {
+              setRwDraft(null);
+              setFilters({ rwMin: value === 30 ? null : value, page: 1 });
+            }}
             aria-valuetext={`${rwValue} decibels`}
             aria-label="Minimum sound insulation Rw"
           />

@@ -9,6 +9,11 @@ export function ProductSearch({ initialQuery = '' }: { initialQuery?: string }) 
   const [, setFilters] = useProductFilters();
   const [value, setValue] = useState(initialQuery);
   const lastSyncedQuery = useRef(initialQuery);
+  const setFiltersRef = useRef(setFilters);
+
+  useEffect(() => {
+    setFiltersRef.current = setFilters;
+  }, [setFilters]);
 
   // Sync input when URL changes externally (chip removal, back/forward, clear all).
   useEffect(() => {
@@ -23,11 +28,11 @@ export function ProductSearch({ initialQuery = '' }: { initialQuery?: string }) 
       const next = value.trim();
       if (next !== lastSyncedQuery.current.trim()) {
         lastSyncedQuery.current = next;
-        setFilters({ q: next || null, page: 1 });
+        setFiltersRef.current({ q: next || null, page: 1 });
       }
     }, 300);
     return () => window.clearTimeout(timer);
-  }, [value, setFilters]);
+  }, [value]);
 
   return (
     <div className="relative">

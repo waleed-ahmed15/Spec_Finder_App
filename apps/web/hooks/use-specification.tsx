@@ -78,7 +78,7 @@ export function useProductFilters() {
       sort: parseAsString.withDefault('relevance'),
       page: parseAsInteger.withDefault(1),
     },
-    { history: 'push', shallow: false },
+    { history: 'push', shallow: true, throttleMs: 50 },
   );
 }
 

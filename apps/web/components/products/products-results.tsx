@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import type { ProductsResponse } from '@specfinder/shared';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -92,6 +93,7 @@ export function ProductsResults() {
   const [filters, setFilters] = useProductFilters();
   const [{ product: detailSlug }] = useProductDetailSlug();
   const { compareSlugs, compareHydrated } = useSpecification();
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const searchParams = queryToSearchParams({
     q: filters.q || undefined,
@@ -155,7 +157,7 @@ export function ProductsResults() {
         <ProductSearch initialQuery={filters.q ?? ''} />
 
         <div className="flex items-center justify-between gap-3 md:hidden">
-          <Sheet>
+          <Sheet open={mobileFiltersOpen} onOpenChange={setMobileFiltersOpen}>
             <SheetTrigger asChild>
               <Button variant="outline" className="min-h-11">
                 Filters{activeFilterCount > 0 ? ` (${activeFilterCount})` : ''}
@@ -166,7 +168,7 @@ export function ProductsResults() {
                 <SheetTitle>Requirements</SheetTitle>
               </SheetHeader>
               <div className="px-4 pb-6">
-                <ProductFiltersPanel />
+                {mobileFiltersOpen && <ProductFiltersPanel />}
               </div>
             </SheetContent>
           </Sheet>
