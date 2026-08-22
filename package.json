@@ -1,0 +1,34 @@
+{
+  "name": "specfinder",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --parallel --filter @specfinder/web --filter @specfinder/api dev",
+    "dev:web": "pnpm --filter @specfinder/web dev",
+    "dev:api": "pnpm --filter @specfinder/api dev",
+    "build": "pnpm --filter @specfinder/shared build && pnpm --filter @specfinder/api build && pnpm --filter @specfinder/web build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "test:e2e": "pnpm --filter @specfinder/web test:e2e",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.6.2",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md}": "prettier --write"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.11.0"
+}
