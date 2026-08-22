@@ -3,6 +3,7 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react';
 import { parseAsArrayOf, parseAsInteger, parseAsString, useQueryStates } from 'nuqs';
 import type { Product } from '@specfinder/shared';
+import { useCompareList } from '@/hooks/use-compare-list';
 
 type SpecificationContextValue = {
   items: Product[];
@@ -10,7 +11,9 @@ type SpecificationContextValue = {
   removeItem: (productId: string) => void;
   isInSpecification: (productId: string) => boolean;
   compareSlugs: string[];
+  compareHydrated: boolean;
   toggleCompare: (slug: string) => void;
+  clearCompare: () => void;
   isInCompare: (slug: string) => boolean;
 };
 
@@ -18,9 +21,13 @@ const SpecificationContext = createContext<SpecificationContextValue | null>(nul
 
 export function SpecificationProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<Product[]>([]);
-  const [compare, setCompare] = useQueryStates({
-    compare: parseAsArrayOf(parseAsString).withDefault([]),
-  });
+  const {
+    compareSlugs,
+    isHydrated: compareHydrated,
+    toggleCompare,
+    clearCompare,
+    isInCompare,
+  } = useCompareList();
 
   const addItem = useCallback((product: Product) => {
     setItems((current) => {
@@ -33,31 +40,19 @@ export function SpecificationProvider({ children }: { children: ReactNode }) {
     setItems((current) => current.filter((item) => item.id !== productId));
   }, []);
 
-  const toggleCompare = useCallback(
-    (slug: string) => {
-      setCompare((current) => {
-        const slugs = current.compare ?? [];
-        if (slugs.includes(slug)) {
-          return { compare: slugs.filter((value) => value !== slug) };
-        }
-        if (slugs.length >= 3) return current;
-        return { compare: [...slugs, slug] };
-      });
-    },
-    [setCompare],
-  );
-
   const value = useMemo<SpecificationContextValue>(
     () => ({
       items,
       addItem,
       removeItem,
       isInSpecification: (productId) => items.some((item) => item.id === productId),
-      compareSlugs: compare.compare ?? [],
+      compareSlugs,
+      compareHydrated,
       toggleCompare,
-      isInCompare: (slug) => (compare.compare ?? []).includes(slug),
+      clearCompare,
+      isInCompare,
     }),
-    [items, addItem, removeItem, compare.compare, toggleCompare],
+    [items, addItem, removeItem, compareSlugs, compareHydrated, toggleCompare, clearCompare, isInCompare],
   );
 
   return <SpecificationContext.Provider value={value}>{children}</SpecificationContext.Provider>;
@@ -69,12 +64,6 @@ export function useSpecification() {
     throw new Error('useSpecification must be used within SpecificationProvider');
   }
   return context;
-}
-
-export function useCompareSlugsParam() {
-  return useQueryStates({
-    compare: parseAsArrayOf(parseAsString).withDefault([]),
-  });
 }
 
 export function useProductFilters() {

@@ -145,7 +145,7 @@ export function ProductDetailActions({
         <Button
           variant="outline"
           onClick={() => toggleCompare(product.slug)}
-          className="min-h-10"
+          className={cn('min-h-10', inCompare && 'border-primary/30 bg-primary-tint text-primary')}
           aria-pressed={inCompare}
         >
           <GitCompare className="size-4" aria-hidden />

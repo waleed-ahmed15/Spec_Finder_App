@@ -26,9 +26,11 @@ import { ProductFiltersPanel } from '@/components/filters/product-filters-panel'
 import { ProductSearch } from '@/components/filters/product-search';
 import { ProductCard } from '@/components/products/product-card';
 import { ProductDetailSheet } from '@/components/products/product-detail-sheet';
+import { CompareBar } from '@/components/compare/compare-bar';
 import { apiClient } from '@/lib/api-client';
+import { cn } from '@/lib/utils';
 import { queryToSearchParams, SORT_LABELS } from '@/lib/query-params';
-import { useProductDetailSlug, useProductFilters } from '@/hooks/use-specification';
+import { useProductDetailSlug, useProductFilters, useSpecification } from '@/hooks/use-specification';
 import type { SortOption } from '@specfinder/shared';
 
 function ProductCardSkeleton() {
@@ -89,6 +91,7 @@ function EmptyState({
 export function ProductsResults() {
   const [filters, setFilters] = useProductFilters();
   const [{ product: detailSlug }] = useProductDetailSlug();
+  const { compareSlugs, compareHydrated } = useSpecification();
 
   const searchParams = queryToSearchParams({
     q: filters.q || undefined,
@@ -137,7 +140,10 @@ export function ProductsResults() {
 
   return (
     <>
-    <div className="mx-auto grid max-w-7xl gap-6 px-4 py-6 md:grid-cols-[280px_1fr] md:px-6">
+    <div className={cn(
+      'mx-auto grid max-w-7xl gap-6 px-4 py-6 md:grid-cols-[280px_1fr] md:px-6',
+      compareHydrated && compareSlugs.length > 0 && 'pb-24',
+    )}>
       <aside className="hidden md:block">
         <div className="sticky top-6 space-y-4 rounded border border-rule bg-surface-raised p-4">
           <h2 className="font-display text-base font-semibold">Requirements</h2>
@@ -292,6 +298,7 @@ export function ProductsResults() {
       </section>
     </div>
     <ProductDetailSheet previewProduct={previewProduct} />
+    <CompareBar />
     </>
   );
 }
