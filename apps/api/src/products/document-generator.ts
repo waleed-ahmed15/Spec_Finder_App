@@ -1,10 +1,27 @@
-import type { Product } from '@specfinder/shared';
+import type { DocumentType, Product } from '@specfinder/shared';
 
-export const DOWNLOADABLE_DOCUMENT_TYPES = ['TDS', 'SDS', 'DoP', 'EPD'] as const;
-export type DownloadableDocumentType = (typeof DOWNLOADABLE_DOCUMENT_TYPES)[number];
+export const PREVIEWABLE_DOCUMENT_TYPES = [
+  'TDS',
+  'SDS',
+  'DoP',
+  'EPD',
+  'CAD',
+  'BIM',
+] as const satisfies readonly DocumentType[];
 
-export function isDownloadableDocumentType(type: string): type is DownloadableDocumentType {
-  return (DOWNLOADABLE_DOCUMENT_TYPES as readonly string[]).includes(type);
+export type PreviewableDocumentType = (typeof PREVIEWABLE_DOCUMENT_TYPES)[number];
+
+/** @deprecated Use isPreviewableDocumentType */
+export const DOWNLOADABLE_DOCUMENT_TYPES = PREVIEWABLE_DOCUMENT_TYPES;
+export type DownloadableDocumentType = PreviewableDocumentType;
+
+export function isPreviewableDocumentType(type: string): type is PreviewableDocumentType {
+  return (PREVIEWABLE_DOCUMENT_TYPES as readonly string[]).includes(type);
+}
+
+/** @deprecated Use isPreviewableDocumentType */
+export function isDownloadableDocumentType(type: string): type is PreviewableDocumentType {
+  return isPreviewableDocumentType(type);
 }
 
 function escapeHtml(value: string): string {
@@ -45,7 +62,7 @@ function facePaperLabel(facePaper: string): string {
   }
 }
 
-function documentTitle(type: DownloadableDocumentType, productName: string): string {
+function documentTitle(type: PreviewableDocumentType, productName: string): string {
   switch (type) {
     case 'TDS':
       return `${productName} — Technical datasheet`;
@@ -55,10 +72,14 @@ function documentTitle(type: DownloadableDocumentType, productName: string): str
       return `${productName} — Declaration of Performance`;
     case 'EPD':
       return `${productName} — Environmental Product Declaration`;
+    case 'CAD':
+      return `${productName} — CAD details`;
+    case 'BIM':
+      return `${productName} — BIM object summary`;
   }
 }
 
-function documentFilename(slug: string, type: DownloadableDocumentType): string {
+function documentFilename(slug: string, type: PreviewableDocumentType): string {
   return `aurelith-${slug}-${type.toLowerCase()}.html`;
 }
 
@@ -237,7 +258,7 @@ function standardsSection(product: Product): string {
   `;
 }
 
-function renderShell(product: Product, type: DownloadableDocumentType, body: string): string {
+function renderShell(product: Product, type: PreviewableDocumentType, body: string): string {
   const title = documentTitle(type, product.name);
   const generatedAt = new Date().toISOString();
 
@@ -358,9 +379,66 @@ function generateEpd(product: Product): string {
   );
 }
 
+function generateCad(product: Product): string {
+  return renderShell(
+    product,
+    'CAD',
+    `
+      <section>
+        <h2>CAD detail package</h2>
+        <p>Detail drawings for ${escapeHtml(product.name)} covering typical junctions, board layouts, and fixing centres. In production this would download native DWG/DXF files from the asset management service.</p>
+        <ul>
+          <li>Board layout — standard storey height</li>
+          <li>Head and base junction details</li>
+          <li>Control joint and opening treatment</li>
+          <li>Fixing pattern — ${escapeHtml(product.edgeProfile)} edge profile</li>
+        </ul>
+      </section>
+      ${variantsSection(product)}
+      ${standardsSection(product)}
+      <section>
+        <h2>Prototype note</h2>
+        <p>This HTML preview replaces binary CAD files in the SpecFinder demonstration environment.</p>
+      </section>
+    `,
+  );
+}
+
+function generateBim(product: Product): string {
+  return renderShell(
+    product,
+    'BIM',
+    `
+      <section>
+        <h2>BIM object summary</h2>
+        <p>Digital object metadata for ${escapeHtml(product.name)}. In production this would provide IFC/RFA downloads compatible with major authoring tools.</p>
+        <dl class="meta">
+          <div>
+            <dt>Object type</dt>
+            <dd>${escapeHtml(product.category.replace(/_/g, ' '))}</dd>
+          </div>
+          <div>
+            <dt>Primary material no.</dt>
+            <dd>${escapeHtml(product.variants[0]?.materialNumber ?? '—')}</dd>
+          </div>
+          <div>
+            <dt>Fire resistance</dt>
+            <dd>${escapeHtml(formatFireRating(product.performance.fireResistanceMin))}</dd>
+          </div>
+        </dl>
+      </section>
+      ${performanceSection(product)}
+      <section>
+        <h2>Prototype note</h2>
+        <p>This HTML preview replaces a hosted BIM object in the SpecFinder demonstration environment.</p>
+      </section>
+    `,
+  );
+}
+
 export function generateProductDocument(
   product: Product,
-  type: DownloadableDocumentType,
+  type: PreviewableDocumentType,
 ): { html: string; filename: string; title: string } {
   let html: string;
   switch (type) {
@@ -375,6 +453,12 @@ export function generateProductDocument(
       break;
     case 'EPD':
       html = generateEpd(product);
+      break;
+    case 'CAD':
+      html = generateCad(product);
+      break;
+    case 'BIM':
+      html = generateBim(product);
       break;
   }
 

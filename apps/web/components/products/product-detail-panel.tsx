@@ -18,7 +18,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { DocumentTypeBadge, FieldLabel } from '@/components/glossary/term-tooltip';
 import { useSpecification } from '@/hooks/use-specification';
 import {
-  isDownloadableDocumentType,
+  isPreviewableDocumentType,
   openProductDocument,
 } from '@/lib/document-download';
 import {
@@ -111,15 +111,10 @@ function PerformanceMetrics({
 }
 
 function handleDocumentAction(product: Product, type: DocumentType) {
-  if (isDownloadableDocumentType(type)) {
-    openProductDocument(product.slug, type);
-    toast.success(`Opening ${type} document`);
-    return;
-  }
+  if (!isPreviewableDocumentType(type)) return;
 
-  toast.message('Download not wired in this prototype', {
-    description: 'CAD and BIM objects would link to the asset management service in production.',
-  });
+  openProductDocument(product.slug, type);
+  toast.success(`Opening ${type} document`);
 }
 
 export function ProductDetailActions({
@@ -338,7 +333,7 @@ function ProductDetailTabs({
                     onClick={() => handleDocumentAction(product, document.type)}
                   >
                     <Download className="size-4" aria-hidden />
-                    {isDownloadableDocumentType(document.type) ? 'Open' : 'Preview'}
+                    Open
                   </Button>
                 </TableCell>
               </TableRow>

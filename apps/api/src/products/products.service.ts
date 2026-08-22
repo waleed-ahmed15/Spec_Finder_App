@@ -17,8 +17,8 @@ import { ProductsRepository } from './products.repository';
 import { buildMatch, rankProducts } from './ranking';
 import {
   generateProductDocument,
-  isDownloadableDocumentType,
-  type DownloadableDocumentType,
+  isPreviewableDocumentType,
+  type PreviewableDocumentType,
 } from './document-generator';
 
 @Injectable()
@@ -112,10 +112,8 @@ export class ProductsService {
   }
 
   getDocument(slug: string, type: string) {
-    if (!isDownloadableDocumentType(type)) {
-      throw new BadRequestException(
-        `Document type "${type}" is not available for download in this prototype`,
-      );
+    if (!isPreviewableDocumentType(type)) {
+      throw new BadRequestException(`Unknown document type "${type}"`);
     }
 
     const product = this.findBySlug(slug);
@@ -128,7 +126,7 @@ export class ProductsService {
       throw new NotFoundException(`EPD not available for product "${slug}"`);
     }
 
-    return generateProductDocument(product, type as DownloadableDocumentType);
+    return generateProductDocument(product, type as PreviewableDocumentType);
   }
 
   compare(rawSlugs: string | string[] | undefined): Product[] {

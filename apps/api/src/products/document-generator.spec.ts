@@ -76,4 +76,12 @@ describe('document-generator', () => {
       ),
     ).toThrow('EPD not available');
   });
+
+  it('generates CAD and BIM preview documents', () => {
+    const cad = generateProductDocument(sampleProduct, 'CAD');
+    const bim = generateProductDocument(sampleProduct, 'BIM');
+
+    expect(cad.html).toContain('CAD detail package');
+    expect(bim.html).toContain('BIM object summary');
+  });
 });
