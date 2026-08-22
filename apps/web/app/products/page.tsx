@@ -10,7 +10,9 @@ export default function ProductsPage() {
   return (
     <>
       <SiteHeader />
-      <ProductsResults />
+      <div id="main-content">
+        <ProductsResults />
+      </div>
     </>
   );
 }

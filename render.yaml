@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: specfinder-api
+    env: node
+    buildCommand: pnpm install && pnpm --filter @specfinder/shared build && pnpm --filter @specfinder/api build
+    startCommand: node apps/api/dist/main.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: WEB_ORIGIN
+        sync: false

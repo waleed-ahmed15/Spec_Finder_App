@@ -157,7 +157,7 @@ export function ProductsResults() {
             {isLoading
               ? 'Loading products…'
               : data
-                ? `${data.total} product${data.total === 1 ? '' : 's'} meet your requirements`
+                ? `${data.total} products meet your requirements`
                 : ' '}
           </p>
           <Select

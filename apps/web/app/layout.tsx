@@ -37,6 +37,12 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       className={`${archivo.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} h-full`}
     >
       <body className="min-h-full flex flex-col font-sans">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-primary focus:px-3 focus:py-2 focus:text-primary-foreground"
+        >
+          Skip to main content
+        </a>
         <AppProviders>
           <TooltipProvider delayDuration={300}>{children}</TooltipProvider>
           <Toaster />

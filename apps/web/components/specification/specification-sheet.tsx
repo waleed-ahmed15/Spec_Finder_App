@@ -47,9 +47,12 @@ export function SpecificationSheet({ count }: { count: number }) {
           Specification{count > 0 ? ` (${count})` : ''}
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex w-full flex-col sm:max-w-md">
+      <SheetContent
+        className="flex w-full flex-col sm:max-w-md"
+        aria-labelledby="specification-sheet-title"
+      >
         <SheetHeader>
-          <SheetTitle>Specification list</SheetTitle>
+          <SheetTitle id="specification-sheet-title">Specification list</SheetTitle>
         </SheetHeader>
 
         {items.length === 0 ? (

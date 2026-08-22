@@ -83,7 +83,11 @@ export function ProductFiltersPanel() {
         >
           {FIRE_OPTIONS.map((option) => (
             <div key={option.value || 'none'} className="flex items-center gap-2">
-              <RadioGroupItem value={option.value} id={`fire-${option.value || 'none'}`} />
+              <RadioGroupItem
+                value={option.value}
+                id={`fire-${option.value || 'none'}`}
+                aria-label={option.label}
+              />
               <Label htmlFor={`fire-${option.value || 'none'}`}>{option.label}</Label>
             </div>
           ))}
