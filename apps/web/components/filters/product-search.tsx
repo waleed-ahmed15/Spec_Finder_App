@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { useProductFilters } from '@/hooks/use-specification';
@@ -8,16 +8,26 @@ import { useProductFilters } from '@/hooks/use-specification';
 export function ProductSearch({ initialQuery = '' }: { initialQuery?: string }) {
   const [, setFilters] = useProductFilters();
   const [value, setValue] = useState(initialQuery);
+  const lastSyncedQuery = useRef(initialQuery);
+
+  // Sync input when URL changes externally (chip removal, back/forward, clear all).
+  useEffect(() => {
+    if (initialQuery !== lastSyncedQuery.current) {
+      lastSyncedQuery.current = initialQuery;
+      setValue(initialQuery);
+    }
+  }, [initialQuery]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
       const next = value.trim();
-      if (next !== initialQuery.trim()) {
+      if (next !== lastSyncedQuery.current.trim()) {
+        lastSyncedQuery.current = next;
         setFilters({ q: next || null, page: 1 });
       }
     }, 300);
     return () => window.clearTimeout(timer);
-  }, [value, initialQuery, setFilters]);
+  }, [value, setFilters]);
 
   return (
     <div className="relative">

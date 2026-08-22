@@ -151,7 +151,7 @@ export function ProductsResults() {
       </aside>
 
       <section className="space-y-4">
-        <ProductSearch key={filters.q ?? 'empty'} initialQuery={filters.q ?? ''} />
+        <ProductSearch initialQuery={filters.q ?? ''} />
 
         <div className="flex items-center justify-between gap-3 md:hidden">
           <Sheet>
