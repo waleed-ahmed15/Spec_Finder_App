@@ -2,6 +2,24 @@ import { MAX_COMPARE_PRODUCTS } from '@/lib/compare-url';
 
 export const COMPARE_STORAGE_KEY = 'specfinder:compare-slugs';
 
+const EMPTY_COMPARE_SLUGS: readonly string[] = [];
+let cachedCompareSlugs: readonly string[] = EMPTY_COMPARE_SLUGS;
+let cachedCompareSlugsKey = '';
+
+function compareSlugsKey(slugs: readonly string[]): string {
+  return slugs.join('\0');
+}
+
+function cacheCompareSlugs(slugs: string[]): readonly string[] {
+  const key = compareSlugsKey(slugs);
+  if (key === cachedCompareSlugsKey) {
+    return cachedCompareSlugs;
+  }
+  cachedCompareSlugsKey = key;
+  cachedCompareSlugs = slugs.length === 0 ? EMPTY_COMPARE_SLUGS : slugs;
+  return cachedCompareSlugs;
+}
+
 export function normalizeCompareSlugs(slugs: unknown): string[] {
   if (!Array.isArray(slugs)) return [];
   const unique = slugs.filter(
@@ -11,14 +29,14 @@ export function normalizeCompareSlugs(slugs: unknown): string[] {
   return unique.slice(0, MAX_COMPARE_PRODUCTS);
 }
 
-export function readCompareSlugs(): string[] {
-  if (typeof window === 'undefined') return [];
+export function readCompareSlugs(): readonly string[] {
+  if (typeof window === 'undefined') return EMPTY_COMPARE_SLUGS;
   try {
     const raw = window.localStorage.getItem(COMPARE_STORAGE_KEY);
-    if (!raw) return [];
-    return normalizeCompareSlugs(JSON.parse(raw));
+    if (!raw) return EMPTY_COMPARE_SLUGS;
+    return cacheCompareSlugs(normalizeCompareSlugs(JSON.parse(raw)));
   } catch {
-    return [];
+    return EMPTY_COMPARE_SLUGS;
   }
 }
 
@@ -62,10 +80,10 @@ export function subscribeCompareSlugs(listener: CompareListener): () => void {
   };
 }
 
-export function getCompareSlugsSnapshot(): string[] {
+export function getCompareSlugsSnapshot(): readonly string[] {
   return readCompareSlugs();
 }
 
-export function getCompareSlugsServerSnapshot(): string[] {
-  return [];
+export function getCompareSlugsServerSnapshot(): readonly string[] {
+  return EMPTY_COMPARE_SLUGS;
 }

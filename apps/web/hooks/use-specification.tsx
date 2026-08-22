@@ -10,7 +10,7 @@ type SpecificationContextValue = {
   addItem: (product: Product) => void;
   removeItem: (productId: string) => void;
   isInSpecification: (productId: string) => boolean;
-  compareSlugs: string[];
+  compareSlugs: readonly string[];
   compareHydrated: boolean;
   toggleCompare: (slug: string) => void;
   clearCompare: () => void;
