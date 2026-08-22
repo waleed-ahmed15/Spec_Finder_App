@@ -46,6 +46,7 @@ const ROWS: Array<{
   {
     key: 'variants',
     label: 'Variant count',
+    term: 'variants',
     getValue: (p) => String(p.variants.length),
   },
   {

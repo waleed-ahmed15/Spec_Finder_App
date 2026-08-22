@@ -12,7 +12,8 @@ export type GlossaryTermId =
   | 'BIM'
   | 'reactionToFire'
   | 'materialNumber'
-  | 'recycledContent';
+  | 'recycledContent'
+  | 'variants';
 
 export const GLOSSARY: Record<GlossaryTermId, string> = {
   EI: 'Fire resistance period in minutes for integrity and insulation.',
@@ -30,10 +31,13 @@ export const GLOSSARY: Record<GlossaryTermId, string> = {
     'Reaction to fire classification per EN 13501-1 — describes how a material contributes to fire.',
   materialNumber: 'Manufacturer SKU used by installers and merchants to order the exact variant.',
   recycledContent: 'Percentage of pre- or post-consumer recycled material in the product.',
+  variants:
+    'Other thickness and dimension options for this product, each with its own material number.',
 };
 
 export const GLOSSARY_DISPLAY: Partial<Record<GlossaryTermId, string>> = {
   lambda: 'λ',
+  variants: 'Sizes',
 };
 
 export function glossaryDisplayLabel(term: GlossaryTermId): string {

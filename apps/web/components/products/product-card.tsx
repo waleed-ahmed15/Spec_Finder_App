@@ -173,9 +173,11 @@ function VariantMeta({
           <span className="text-ink">{materialNumber}</span>
         </TermTooltip>
         {variantCount > 1 && (
-          <span className="ml-2 rounded bg-surface-sunken px-1.5 py-0.5">
-            +{variantCount - 1} sizes
-          </span>
+          <TermTooltip term="variants">
+            <span className="ml-2 rounded bg-surface-sunken px-1.5 py-0.5">
+              +{variantCount - 1} sizes
+            </span>
+          </TermTooltip>
         )}
       </p>
     </div>
