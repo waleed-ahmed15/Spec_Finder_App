@@ -1,1 +1,4997 @@
-[]
+[
+  {
+    "id": "prod-001",
+    "slug": "aurelith-standard-12-5",
+    "name": "Aurelith Standard 12.5",
+    "tagline": "General purpose interior board",
+    "description": "Standard gypsum board for dry interior partitions and ceilings.",
+    "category": "gypsum_board",
+    "family": "Standard boards",
+    "facePaper": "ivory",
+    "applications": ["interior_wall", "ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": null,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 33,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.25,
+      "maxHeightM": 3
+    },
+    "standards": ["EN 520 Type A", "EN 13501-1"],
+    "sustainability": {
+      "recycledContentPct": 18,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600010",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600011",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600012",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600013",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Standard 12.5 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Standard 12.5 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Standard 12.5 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Standard 12.5 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Standard 12.5 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Standard 12.5 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Standard%2012.5%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-002",
+    "slug": "aurelith-standard-15",
+    "name": "Aurelith Standard 15",
+    "tagline": "Thicker standard board for improved stiffness",
+    "description": "15 mm standard board for high-traffic corridors.",
+    "category": "gypsum_board",
+    "family": "Standard boards",
+    "facePaper": "ivory",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": null,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 36,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.25,
+      "maxHeightM": 3.3
+    },
+    "standards": ["EN 520 Type A"],
+    "sustainability": {
+      "recycledContentPct": 20,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600020",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600021",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600022",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600023",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Standard 15 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Standard 15 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Standard 15 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Standard 15 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Standard 15 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Standard 15 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Standard%2015%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-003",
+    "slug": "aurelith-standard-lite",
+    "name": "Aurelith Standard Lite",
+    "tagline": "Lightweight standard board",
+    "description": "Reduced weight board for manual handling on site.",
+    "category": "gypsum_board",
+    "family": "Standard boards",
+    "facePaper": "ivory",
+    "applications": ["interior_wall", "ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": null,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 31,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.24,
+      "maxHeightM": 2.8
+    },
+    "standards": ["EN 520 Type A"],
+    "sustainability": {
+      "recycledContentPct": 15,
+      "hasEpd": false
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600030",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600031",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600032",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600033",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Standard Lite technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Standard Lite safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Standard Lite declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Standard Lite CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Standard Lite BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Standard%20Lite%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-004",
+    "slug": "aurelith-ignis-12-5",
+    "name": "Aurelith Ignis 12.5",
+    "tagline": "Fire-resistant, high density core",
+    "description": "Pink-faced fire board for EI 60–90 partition systems.",
+    "category": "gypsum_board",
+    "family": "Fire-resistant boards",
+    "facePaper": "pink",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 48,
+      "moistureClass": "none",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.22,
+      "maxHeightM": 4
+    },
+    "standards": ["EN 520 Type F", "EN 13501-1"],
+    "sustainability": {
+      "recycledContentPct": 22,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600040",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600041",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600042",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600043",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Ignis 12.5 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Ignis 12.5 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Ignis 12.5 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Ignis 12.5 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Ignis 12.5 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Ignis 12.5 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23D6336C%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23D6336C%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Ignis%2012.5%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-005",
+    "slug": "aurelith-ignis-15",
+    "name": "Aurelith Ignis 15",
+    "tagline": "High-density fire-rated core",
+    "description": "15 mm fire board for EI 90 shaft walls.",
+    "category": "gypsum_board",
+    "family": "Fire-resistant boards",
+    "facePaper": "pink",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 90,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 54,
+      "moistureClass": "none",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.21,
+      "maxHeightM": 4.5
+    },
+    "standards": ["EN 520 Type F", "EN 13501-1"],
+    "sustainability": {
+      "recycledContentPct": 24,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600050",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600051",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600052",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600053",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Ignis 15 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Ignis 15 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Ignis 15 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Ignis 15 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Ignis 15 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Ignis 15 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23D6336C%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23D6336C%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Ignis%2015%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-006",
+    "slug": "aurelith-ignis-18",
+    "name": "Aurelith Ignis 18",
+    "tagline": "Maximum fire performance board",
+    "description": "18 mm board for EI 120 fire compartments.",
+    "category": "gypsum_board",
+    "family": "Fire-resistant boards",
+    "facePaper": "pink",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 120,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 58,
+      "moistureClass": "none",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.2,
+      "maxHeightM": 5
+    },
+    "standards": ["EN 520 Type F"],
+    "sustainability": {
+      "recycledContentPct": 26,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600060",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600061",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600062",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600063",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Ignis 18 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Ignis 18 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Ignis 18 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Ignis 18 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Ignis 18 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Ignis 18 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23D6336C%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23D6336C%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Ignis%2018%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-007",
+    "slug": "aurelith-ignis-acoustic",
+    "name": "Aurelith Ignis Acoustic",
+    "tagline": "Fire and acoustic optimised board",
+    "description": "Board tuned for high Rw with EI 60 compliance.",
+    "category": "gypsum_board",
+    "family": "Fire-resistant boards",
+    "facePaper": "pink",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 62,
+      "moistureClass": "none",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.22,
+      "maxHeightM": 4.2
+    },
+    "standards": ["EN 520 Type F"],
+    "sustainability": {
+      "recycledContentPct": 21,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600070",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600071",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600072",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600073",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Ignis Acoustic technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Ignis Acoustic safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Ignis Acoustic declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Ignis Acoustic environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Ignis Acoustic CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Ignis Acoustic BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23D6336C%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23D6336C%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Ignis%20Acoustic%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-008",
+    "slug": "aurelith-aqua-h2",
+    "name": "Aurelith Aqua H2",
+    "tagline": "Moisture-resistant for damp areas",
+    "description": "Green-faced board for bathrooms and kitchens.",
+    "category": "gypsum_board",
+    "family": "Moisture-resistant boards",
+    "facePaper": "green",
+    "applications": ["interior_wall", "ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 40,
+      "moistureClass": "H2",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.24,
+      "maxHeightM": 3
+    },
+    "standards": ["EN 520 Type H1"],
+    "sustainability": {
+      "recycledContentPct": 17,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600080",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600081",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600082",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600083",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Aqua H2 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Aqua H2 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Aqua H2 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Aqua H2 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Aqua H2 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Aqua H2 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%232F9E68%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%232F9E68%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Aqua%20H2%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-009",
+    "slug": "aurelith-aqua-h3",
+    "name": "Aurelith Aqua H3",
+    "tagline": "Wet room rated board",
+    "description": "Board for direct tile adhesion in wet rooms.",
+    "category": "gypsum_board",
+    "family": "Moisture-resistant boards",
+    "facePaper": "green",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 42,
+      "moistureClass": "H3",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.24,
+      "maxHeightM": 3
+    },
+    "standards": ["EN 520 Type H2"],
+    "sustainability": {
+      "recycledContentPct": 16,
+      "hasEpd": false
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600090",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600091",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600092",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600093",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Aqua H3 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Aqua H3 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Aqua H3 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Aqua H3 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Aqua H3 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%232F9E68%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%232F9E68%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Aqua%20H3%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-010",
+    "slug": "aurelith-aqua-fire-h2",
+    "name": "Aurelith Aqua Fire H2",
+    "tagline": "Fire and moisture resistant",
+    "description": "Combined fire and damp exposure board.",
+    "category": "gypsum_board",
+    "family": "Moisture-resistant boards",
+    "facePaper": "green",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 50,
+      "moistureClass": "H2",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.23,
+      "maxHeightM": 3.5
+    },
+    "standards": ["EN 520 Type F/H1"],
+    "sustainability": {
+      "recycledContentPct": 19,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600100",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600101",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600102",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600103",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Aqua Fire H2 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Aqua Fire H2 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Aqua Fire H2 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Aqua Fire H2 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Aqua Fire H2 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Aqua Fire H2 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%232F9E68%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%232F9E68%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Aqua%20Fire%20H2%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-011",
+    "slug": "aurelith-shield-impact",
+    "name": "Aurelith Shield Impact",
+    "tagline": "Impact-resistant partition board",
+    "description": "Grey-faced board for corridors and sports halls.",
+    "category": "gypsum_board",
+    "family": "Impact-resistant boards",
+    "facePaper": "grey",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 44,
+      "moistureClass": "none",
+      "impactResistanceClass": "Severe",
+      "thermalConductivity": 0.25,
+      "maxHeightM": 3.2
+    },
+    "standards": ["EN 520 Type I"],
+    "sustainability": {
+      "recycledContentPct": 20,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600110",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600111",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600112",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600113",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Shield Impact technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Shield Impact safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Shield Impact declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Shield Impact environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Shield Impact CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Shield Impact BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%234C5A6B%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%234C5A6B%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Shield%20Impact%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-012",
+    "slug": "aurelith-shield-fire",
+    "name": "Aurelith Shield Fire",
+    "tagline": "Impact and fire rated board",
+    "description": "Dual performance board for healthcare corridors.",
+    "category": "gypsum_board",
+    "family": "Impact-resistant boards",
+    "facePaper": "grey",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 52,
+      "moistureClass": "none",
+      "impactResistanceClass": "Severe",
+      "thermalConductivity": 0.23,
+      "maxHeightM": 3.8
+    },
+    "standards": ["EN 520 Type F/I"],
+    "sustainability": {
+      "recycledContentPct": 23,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600120",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600121",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600122",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600123",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Shield Fire technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Shield Fire safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Shield Fire declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Shield Fire environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Shield Fire CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Shield Fire BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%234C5A6B%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%234C5A6B%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Shield%20Fire%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-013",
+    "slug": "aurelith-ceiling-pro",
+    "name": "Aurelith Ceiling Pro",
+    "tagline": "Ceiling-optimised board",
+    "description": "Lightweight ceiling board with square edge.",
+    "category": "gypsum_board",
+    "family": "Ceiling boards",
+    "facePaper": "ivory",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 35,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.24,
+      "maxHeightM": null
+    },
+    "standards": ["EN 520 Type A"],
+    "sustainability": {
+      "recycledContentPct": 18,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600130",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600131",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600132",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600133",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Ceiling Pro technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Ceiling Pro safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Ceiling Pro declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Ceiling Pro environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Ceiling Pro CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Ceiling Pro BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Ceiling%20Pro%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-014",
+    "slug": "aurelith-ceiling-fire",
+    "name": "Aurelith Ceiling Fire",
+    "tagline": "Fire-rated ceiling board",
+    "description": "Fire performance ceiling board for protected zones.",
+    "category": "gypsum_board",
+    "family": "Ceiling boards",
+    "facePaper": "pink",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 46,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.22,
+      "maxHeightM": null
+    },
+    "standards": ["EN 520 Type F"],
+    "sustainability": {
+      "recycledContentPct": 21,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600140",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600141",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600142",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600143",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Ceiling Fire technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Ceiling Fire safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Ceiling Fire declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Ceiling Fire environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Ceiling Fire CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Ceiling Fire BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23D6336C%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23D6336C%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Ceiling%20Fire%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-015",
+    "slug": "aurelith-shaft-20",
+    "name": "Aurelith Shaft 20",
+    "tagline": "Shaft wall specialist board",
+    "description": "20 mm board for service shaft enclosures.",
+    "category": "gypsum_board",
+    "family": "Fire-resistant boards",
+    "facePaper": "pink",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 90,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 56,
+      "moistureClass": "none",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.2,
+      "maxHeightM": 6
+    },
+    "standards": ["EN 520 Type F"],
+    "sustainability": {
+      "recycledContentPct": 25,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600150",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600151",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600152",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600153",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600154",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 20,
+        "weightKg": 38,
+        "weightPerSqmKg": 16,
+        "piecesPerPallet": 56,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600155",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 25,
+        "weightKg": 47.5,
+        "weightPerSqmKg": 20,
+        "piecesPerPallet": 60,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600156",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 30,
+        "weightKg": 57,
+        "weightPerSqmKg": 24,
+        "piecesPerPallet": 64,
+        "coverageSqm": 2.88
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Shaft 20 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Shaft 20 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Shaft 20 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Shaft 20 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Shaft 20 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Shaft 20 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23D6336C%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23D6336C%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Shaft%2020%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-016",
+    "slug": "aurelith-acoustic-12-5",
+    "name": "Aurelith Acoustic 12.5",
+    "tagline": "Acoustic performance board",
+    "description": "Board for Rw 50+ single stud partitions.",
+    "category": "gypsum_board",
+    "family": "Acoustic boards",
+    "facePaper": "ivory",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 55,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.24,
+      "maxHeightM": 3.5
+    },
+    "standards": ["EN 520 Type A"],
+    "sustainability": {
+      "recycledContentPct": 19,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600160",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600161",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600162",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600163",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Acoustic 12.5 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Acoustic 12.5 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Acoustic 12.5 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Acoustic 12.5 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Acoustic 12.5 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Acoustic 12.5 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Acoustic%2012.5%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-017",
+    "slug": "aurelith-acoustic-15",
+    "name": "Aurelith Acoustic 15",
+    "tagline": "High Rw acoustic board",
+    "description": "Dense core board for acoustic separation walls.",
+    "category": "gypsum_board",
+    "family": "Acoustic boards",
+    "facePaper": "ivory",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 60,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.23,
+      "maxHeightM": 3.8
+    },
+    "standards": ["EN 520 Type A"],
+    "sustainability": {
+      "recycledContentPct": 20,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600170",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600171",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600172",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600173",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Acoustic 15 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Acoustic 15 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Acoustic 15 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Acoustic 15 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Acoustic 15 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Acoustic 15 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Acoustic%2015%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-018",
+    "slug": "aurelith-facade-sheathing",
+    "name": "Aurelith Facade Sheathing",
+    "tagline": "Exterior sheathing board",
+    "description": "Weather-resistant sheathing for ventilated façades.",
+    "category": "gypsum_board",
+    "family": "Façade boards",
+    "facePaper": "grey",
+    "applications": ["facade"],
+    "areaOfApplication": "exterior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 38,
+      "moistureClass": "H2",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.22,
+      "maxHeightM": null
+    },
+    "standards": ["EN 12467"],
+    "sustainability": {
+      "recycledContentPct": 14,
+      "hasEpd": false
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600180",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 28.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 52,
+        "coverageSqm": 2.88
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Facade Sheathing technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Facade Sheathing safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Facade Sheathing declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Facade Sheathing CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Facade Sheathing BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%234C5A6B%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%234C5A6B%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Facade%20Sheathing%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-019",
+    "slug": "aurelith-cement-base-12",
+    "name": "Aurelith Cement Base 12",
+    "tagline": "Cementitious base board",
+    "description": "Non-combustible base board for tile backing.",
+    "category": "cement_board",
+    "family": "Cement boards",
+    "facePaper": "grey",
+    "applications": ["interior_wall", "facade"],
+    "areaOfApplication": "both",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 45,
+      "moistureClass": "H3",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.23,
+      "maxHeightM": 3
+    },
+    "standards": ["EN 12467"],
+    "sustainability": {
+      "recycledContentPct": 12,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600190",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600191",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600192",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600193",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Cement Base 12 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Cement Base 12 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Cement Base 12 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Cement Base 12 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Cement Base 12 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Cement Base 12 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%234C5A6B%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%234C5A6B%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Cement%20Base%2012%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-020",
+    "slug": "aurelith-cement-fire-15",
+    "name": "Aurelith Cement Fire 15",
+    "tagline": "Fire-rated cement board",
+    "description": "A1 reaction to fire cement board for fire zones.",
+    "category": "cement_board",
+    "family": "Cement boards",
+    "facePaper": "grey",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 90,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 50,
+      "moistureClass": "H2",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.22,
+      "maxHeightM": 4
+    },
+    "standards": ["EN 12467", "EN 13501-1"],
+    "sustainability": {
+      "recycledContentPct": 10,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600200",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600201",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600202",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600203",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Cement Fire 15 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Cement Fire 15 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Cement Fire 15 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Cement Fire 15 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Cement Fire 15 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Cement Fire 15 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%234C5A6B%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%234C5A6B%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Cement%20Fire%2015%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-021",
+    "slug": "aurelith-cement-floor",
+    "name": "Aurelith Cement Floor",
+    "tagline": "Floor substrate board",
+    "description": "Rigid floor board for wet area tiling.",
+    "category": "cement_board",
+    "family": "Cement boards",
+    "facePaper": "none",
+    "applications": ["floor"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 42,
+      "moistureClass": "H3",
+      "impactResistanceClass": "Severe",
+      "thermalConductivity": 0.24,
+      "maxHeightM": null
+    },
+    "standards": ["EN 12467"],
+    "sustainability": {
+      "recycledContentPct": 8,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600210",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600211",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600212",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600213",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Cement Floor technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Cement Floor safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Cement Floor declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Cement Floor environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Cement Floor CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Cement Floor BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Cement%20Floor%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-022",
+    "slug": "aurelith-cement-facade",
+    "name": "Aurelith Cement Facade",
+    "tagline": "Exterior cement board",
+    "description": "Weatherproof façade cladding substrate.",
+    "category": "cement_board",
+    "family": "Cement boards",
+    "facePaper": "grey",
+    "applications": ["facade"],
+    "areaOfApplication": "exterior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 40,
+      "moistureClass": "H3",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.21,
+      "maxHeightM": null
+    },
+    "standards": ["EN 12467"],
+    "sustainability": {
+      "recycledContentPct": 11,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600220",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600221",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600222",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600223",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Cement Facade technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Cement Facade safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Cement Facade declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Cement Facade environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Cement Facade CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Cement Facade BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%234C5A6B%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%234C5A6B%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Cement%20Facade%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-023",
+    "slug": "aurelith-cement-acoustic",
+    "name": "Aurelith Cement Acoustic",
+    "tagline": "Acoustic cement board",
+    "description": "High mass board for acoustic floors.",
+    "category": "cement_board",
+    "family": "Cement boards",
+    "facePaper": "grey",
+    "applications": ["floor", "interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 58,
+      "moistureClass": "H2",
+      "impactResistanceClass": "Hard body",
+      "thermalConductivity": 0.22,
+      "maxHeightM": null
+    },
+    "standards": ["EN 12467"],
+    "sustainability": {
+      "recycledContentPct": 9,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600230",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600231",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600232",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600233",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Cement Acoustic technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Cement Acoustic safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Cement Acoustic declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Cement Acoustic environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Cement Acoustic CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Cement Acoustic BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%234C5A6B%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%234C5A6B%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Cement%20Acoustic%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-024",
+    "slug": "aurelith-cement-lite",
+    "name": "Aurelith Cement Lite",
+    "tagline": "Lightweight cement board",
+    "description": "Reduced weight cement board for overhead use.",
+    "category": "cement_board",
+    "family": "Cement boards",
+    "facePaper": "none",
+    "applications": ["ceiling", "interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 38,
+      "moistureClass": "H2",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.25,
+      "maxHeightM": 3
+    },
+    "standards": ["EN 12467"],
+    "sustainability": {
+      "recycledContentPct": 7,
+      "hasEpd": true
+    },
+    "edgeProfile": "tapered",
+    "variants": [
+      {
+        "materialNumber": "07600240",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600241",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600242",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600243",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Cement Lite technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Cement Lite safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Cement Lite declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Cement Lite environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Cement Lite CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Cement Lite BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Cement%20Lite%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-025",
+    "slug": "aurelith-wool-partition-60",
+    "name": "Aurelith Wool Partition 60",
+    "tagline": "Mineral wool for partitions",
+    "description": "Glass mineral wool for stud cavities.",
+    "category": "insulation",
+    "family": "Mineral wool",
+    "facePaper": "none",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 45,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": 0.035,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13162"],
+    "sustainability": {
+      "recycledContentPct": 30,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600250",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600251",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600252",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600253",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Wool Partition 60 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Wool Partition 60 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Wool Partition 60 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Wool Partition 60 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Wool Partition 60 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Wool Partition 60 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Wool%20Partition%2060%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-026",
+    "slug": "aurelith-wool-acoustic-80",
+    "name": "Aurelith Wool Acoustic 80",
+    "tagline": "High-density acoustic wool",
+    "description": "Dense wool for Rw improvement.",
+    "category": "insulation",
+    "family": "Mineral wool",
+    "facePaper": "none",
+    "applications": ["interior_wall", "ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 90,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 52,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": 0.034,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13162"],
+    "sustainability": {
+      "recycledContentPct": 35,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600260",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600261",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600262",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600263",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Wool Acoustic 80 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Wool Acoustic 80 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Wool Acoustic 80 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Wool Acoustic 80 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Wool Acoustic 80 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Wool Acoustic 80 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Wool%20Acoustic%2080%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-027",
+    "slug": "aurelith-wool-facade-120",
+    "name": "Aurelith Wool Facade 120",
+    "tagline": "Façade insulation slab",
+    "description": "Non-combustible façade insulation.",
+    "category": "insulation",
+    "family": "Mineral wool",
+    "facePaper": "none",
+    "applications": ["facade"],
+    "areaOfApplication": "exterior",
+    "performance": {
+      "fireResistanceMin": 120,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 35,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": 0.033,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13162"],
+    "sustainability": {
+      "recycledContentPct": 28,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600270",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600271",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600272",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600273",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Wool Facade 120 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Wool Facade 120 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Wool Facade 120 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Wool Facade 120 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Wool Facade 120 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Wool Facade 120 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Wool%20Facade%20120%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-028",
+    "slug": "aurelith-pir-floor-40",
+    "name": "Aurelith PIR Floor 40",
+    "tagline": "PIR floor insulation",
+    "description": "High-compression floor insulation board.",
+    "category": "insulation",
+    "family": "PIR boards",
+    "facePaper": "none",
+    "applications": ["floor"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "E",
+      "soundReductionRw": 30,
+      "moistureClass": "H2",
+      "impactResistanceClass": null,
+      "thermalConductivity": 0.022,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13165"],
+    "sustainability": {
+      "recycledContentPct": 5,
+      "hasEpd": true
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600280",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600281",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600282",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600283",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith PIR Floor 40 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith PIR Floor 40 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith PIR Floor 40 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith PIR Floor 40 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith PIR Floor 40 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith PIR Floor 40 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20PIR%20Floor%2040%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-029",
+    "slug": "aurelith-eps-facade-80",
+    "name": "Aurelith EPS Facade 80",
+    "tagline": "EPS façade insulation",
+    "description": "Expanded polystyrene for ETICS systems.",
+    "category": "insulation",
+    "family": "EPS boards",
+    "facePaper": "none",
+    "applications": ["facade"],
+    "areaOfApplication": "exterior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "E",
+      "soundReductionRw": 28,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": 0.032,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13163"],
+    "sustainability": {
+      "recycledContentPct": 0,
+      "hasEpd": false
+    },
+    "edgeProfile": "square",
+    "variants": [
+      {
+        "materialNumber": "07600290",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600291",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600292",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600293",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith EPS Facade 80 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith EPS Facade 80 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith EPS Facade 80 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith EPS Facade 80 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith EPS Facade 80 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20EPS%20Facade%2080%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-030",
+    "slug": "aurelith-wool-ceiling",
+    "name": "Aurelith Wool Ceiling",
+    "tagline": "Ceiling cavity insulation",
+    "description": "Lightweight wool for suspended ceilings.",
+    "category": "insulation",
+    "family": "Mineral wool",
+    "facePaper": "none",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": 40,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": 0.036,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13162"],
+    "sustainability": {
+      "recycledContentPct": 32,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600300",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600301",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600302",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600303",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Wool Ceiling technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Wool Ceiling safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Wool Ceiling declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Wool Ceiling environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Wool Ceiling CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Wool Ceiling BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Wool%20Ceiling%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-031",
+    "slug": "aurelith-tile-standard",
+    "name": "Aurelith Tile Standard",
+    "tagline": "Standard ceiling tile",
+    "description": "Mineral ceiling tile for grid systems.",
+    "category": "ceiling_tile",
+    "family": "Ceiling tiles",
+    "facePaper": "ivory",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 35,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.04,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13964"],
+    "sustainability": {
+      "recycledContentPct": 25,
+      "hasEpd": true
+    },
+    "edgeProfile": "recessed",
+    "variants": [
+      {
+        "materialNumber": "07600310",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600311",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600312",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600313",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Tile Standard technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Tile Standard safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Tile Standard declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Tile Standard environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Tile Standard CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Tile Standard BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Tile%20Standard%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-032",
+    "slug": "aurelith-tile-acoustic",
+    "name": "Aurelith Tile Acoustic",
+    "tagline": "High NRC ceiling tile",
+    "description": "Acoustic absorption tile for offices.",
+    "category": "ceiling_tile",
+    "family": "Ceiling tiles",
+    "facePaper": "ivory",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 42,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.04,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13964"],
+    "sustainability": {
+      "recycledContentPct": 28,
+      "hasEpd": true
+    },
+    "edgeProfile": "recessed",
+    "variants": [
+      {
+        "materialNumber": "07600320",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600321",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600322",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600323",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Tile Acoustic technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Tile Acoustic safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Tile Acoustic declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Tile Acoustic environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Tile Acoustic CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Tile Acoustic BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23B8A88A%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23B8A88A%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Tile%20Acoustic%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-033",
+    "slug": "aurelith-tile-fire",
+    "name": "Aurelith Tile Fire",
+    "tagline": "Fire-rated ceiling tile",
+    "description": "Fire performance tile for escape routes.",
+    "category": "ceiling_tile",
+    "family": "Ceiling tiles",
+    "facePaper": "pink",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 60,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 38,
+      "moistureClass": "none",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.04,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13964"],
+    "sustainability": {
+      "recycledContentPct": 22,
+      "hasEpd": true
+    },
+    "edgeProfile": "recessed",
+    "variants": [
+      {
+        "materialNumber": "07600330",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600331",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600332",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600333",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Tile Fire technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Tile Fire safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Tile Fire declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Tile Fire environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Tile Fire CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Tile Fire BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23D6336C%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23D6336C%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Tile%20Fire%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-034",
+    "slug": "aurelith-tile-moisture",
+    "name": "Aurelith Tile Moisture",
+    "tagline": "Humidity-resistant tile",
+    "description": "Ceiling tile for kitchens and changing rooms.",
+    "category": "ceiling_tile",
+    "family": "Ceiling tiles",
+    "facePaper": "green",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": 36,
+      "moistureClass": "H2",
+      "impactResistanceClass": "Soft body",
+      "thermalConductivity": 0.04,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13964"],
+    "sustainability": {
+      "recycledContentPct": 20,
+      "hasEpd": true
+    },
+    "edgeProfile": "recessed",
+    "variants": [
+      {
+        "materialNumber": "07600340",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600341",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600342",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600343",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Tile Moisture technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Tile Moisture safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Tile Moisture declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Tile Moisture environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Tile Moisture CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Tile Moisture BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%232F9E68%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%232F9E68%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Tile%20Moisture%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-035",
+    "slug": "aurelith-stud-c50",
+    "name": "Aurelith Stud C50",
+    "tagline": "Standard partition stud",
+    "description": "Galvanised steel C-stud for 50 mm systems.",
+    "category": "profile",
+    "family": "Metal profiles",
+    "facePaper": "none",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": null,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": null,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": null,
+      "maxHeightM": 4.5
+    },
+    "standards": ["EN 14195"],
+    "sustainability": {
+      "recycledContentPct": 45,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600350",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600351",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600352",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600353",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Stud C50 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Stud C50 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Stud C50 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Stud C50 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Stud C50 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Stud C50 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Stud%20C50%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-036",
+    "slug": "aurelith-track-u50",
+    "name": "Aurelith Track U50",
+    "tagline": "Floor and head track",
+    "description": "U-track for partition framing.",
+    "category": "profile",
+    "family": "Metal profiles",
+    "facePaper": "none",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": null,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": null,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": null,
+      "maxHeightM": null
+    },
+    "standards": ["EN 14195"],
+    "sustainability": {
+      "recycledContentPct": 45,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600360",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600361",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600362",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600363",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Track U50 technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Track U50 safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Track U50 declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Track U50 environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Track U50 CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Track U50 BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Track%20U50%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-037",
+    "slug": "aurelith-ceiling-main-tee",
+    "name": "Aurelith Ceiling Main Tee",
+    "tagline": "Suspended ceiling main tee",
+    "description": "Primary grid member for ceiling systems.",
+    "category": "profile",
+    "family": "Ceiling grid",
+    "facePaper": "none",
+    "applications": ["ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": null,
+      "reactionToFireClass": "A1",
+      "soundReductionRw": null,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": null,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13964"],
+    "sustainability": {
+      "recycledContentPct": 40,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600370",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600371",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600372",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600373",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Ceiling Main Tee technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Ceiling Main Tee safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Ceiling Main Tee declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Ceiling Main Tee environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Ceiling Main Tee CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Ceiling Main Tee BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Ceiling%20Main%20Tee%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-038",
+    "slug": "aurelith-joint-filler",
+    "name": "Aurelith Joint Filler",
+    "tagline": "Ready-mixed joint compound",
+    "description": "Air-drying compound for tapered edges.",
+    "category": "filler",
+    "family": "Joint compounds",
+    "facePaper": "none",
+    "applications": ["interior_wall", "ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 30,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": null,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": null,
+      "maxHeightM": null
+    },
+    "standards": ["EN 13963"],
+    "sustainability": {
+      "recycledContentPct": 10,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600380",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600381",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600382",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600383",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Joint Filler technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Joint Filler safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Joint Filler declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Joint Filler environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Joint Filler CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Joint Filler BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Joint%20Filler%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-039",
+    "slug": "aurelith-fire-sealant",
+    "name": "Aurelith Fire Sealant",
+    "tagline": "Intumescent fire sealant",
+    "description": "Fire-stopping sealant for joints and penetrations.",
+    "category": "accessory",
+    "family": "Fire stopping",
+    "facePaper": "none",
+    "applications": ["interior_wall"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": 120,
+      "reactionToFireClass": "A2-s1,d0",
+      "soundReductionRw": null,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": null,
+      "maxHeightM": null
+    },
+    "standards": ["EN 1366-4"],
+    "sustainability": {
+      "recycledContentPct": 0,
+      "hasEpd": true
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600390",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600391",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600392",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600393",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Fire Sealant technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Fire Sealant safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Fire Sealant declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "EPD",
+        "title": "Aurelith Fire Sealant environmental product declaration",
+        "fileType": "PDF",
+        "sizeKb": 1200,
+        "pages": 18,
+        "updatedAt": "2025-08-01",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Fire Sealant CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Fire Sealant BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Fire%20Sealant%3C%2Ftext%3E%3C%2Fsvg%3E"
+  },
+  {
+    "id": "prod-040",
+    "slug": "aurelith-screw-system",
+    "name": "Aurelith Screw System",
+    "tagline": "Self-drilling board screws",
+    "description": "Corrosion-resistant screws for board fixing.",
+    "category": "accessory",
+    "family": "Fixings",
+    "facePaper": "none",
+    "applications": ["interior_wall", "ceiling"],
+    "areaOfApplication": "interior",
+    "performance": {
+      "fireResistanceMin": null,
+      "reactionToFireClass": null,
+      "soundReductionRw": null,
+      "moistureClass": "none",
+      "impactResistanceClass": null,
+      "thermalConductivity": null,
+      "maxHeightM": null
+    },
+    "standards": ["EN 14566"],
+    "sustainability": {
+      "recycledContentPct": 60,
+      "hasEpd": false
+    },
+    "edgeProfile": "none",
+    "variants": [
+      {
+        "materialNumber": "07600400",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 9.5,
+        "weightKg": 18.1,
+        "weightPerSqmKg": 7.6,
+        "piecesPerPallet": 40,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600401",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 12.5,
+        "weightKg": 23.8,
+        "weightPerSqmKg": 10,
+        "piecesPerPallet": 44,
+        "coverageSqm": 3.6
+      },
+      {
+        "materialNumber": "07600402",
+        "widthMm": 1200,
+        "lengthMm": 2400,
+        "thicknessMm": 15,
+        "weightKg": 28.5,
+        "weightPerSqmKg": 12,
+        "piecesPerPallet": 48,
+        "coverageSqm": 2.88
+      },
+      {
+        "materialNumber": "07600403",
+        "widthMm": 1200,
+        "lengthMm": 3000,
+        "thicknessMm": 18,
+        "weightKg": 34.2,
+        "weightPerSqmKg": 14.4,
+        "piecesPerPallet": 52,
+        "coverageSqm": 3.6
+      }
+    ],
+    "documents": [
+      {
+        "type": "TDS",
+        "title": "Aurelith Screw System technical datasheet",
+        "fileType": "PDF",
+        "sizeKb": 840,
+        "pages": 12,
+        "updatedAt": "2025-11-01",
+        "url": "#"
+      },
+      {
+        "type": "SDS",
+        "title": "Aurelith Screw System safety datasheet",
+        "fileType": "PDF",
+        "sizeKb": 420,
+        "pages": 6,
+        "updatedAt": "2025-10-15",
+        "url": "#"
+      },
+      {
+        "type": "DoP",
+        "title": "Aurelith Screw System declaration of performance",
+        "fileType": "PDF",
+        "sizeKb": 180,
+        "pages": 2,
+        "updatedAt": "2025-09-20",
+        "url": "#"
+      },
+      {
+        "type": "CAD",
+        "title": "Aurelith Screw System CAD details",
+        "fileType": "PDF",
+        "sizeKb": 960,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      },
+      {
+        "type": "BIM",
+        "title": "Aurelith Screw System BIM object",
+        "fileType": "PDF",
+        "sizeKb": 640,
+        "pages": null,
+        "updatedAt": "2025-07-01",
+        "url": "#"
+      }
+    ],
+    "imageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22480%22%20height%3D%22320%22%20viewBox%3D%220%200%20480%20320%22%3E%3Crect%20width%3D%22480%22%20height%3D%22320%22%20fill%3D%22%23FBFBFA%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%2240%22%20width%3D%22400%22%20height%3D%22240%22%20rx%3D%224%22%20fill%3D%22%23DFE1DE%22%20fill-opacity%3D%220.15%22%20stroke%3D%22%23DFE1DE%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%22240%22%20y%3D%22170%22%20text-anchor%3D%22middle%22%20font-family%3D%22monospace%22%20font-size%3D%2214%22%20fill%3D%22%2316191C%22%3EAurelith%20Screw%20System%3C%2Ftext%3E%3C%2Fsvg%3E"
+  }
+]
