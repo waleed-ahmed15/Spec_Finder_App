@@ -155,7 +155,7 @@ export function ProductsResults() {
                 Filters{activeFilterCount > 0 ? ` (${activeFilterCount})` : ''}
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="overflow-y-auto">
+            <SheetContent side="left" className="overflow-y-auto sm:max-w-sm">
               <SheetHeader>
                 <SheetTitle>Requirements</SheetTitle>
               </SheetHeader>

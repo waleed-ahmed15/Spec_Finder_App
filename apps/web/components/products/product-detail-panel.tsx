@@ -77,7 +77,7 @@ export function ProductDetailPanel({
   };
 
   return (
-    <div className={cn(isSheet ? 'px-4 pb-6 pt-2' : 'mx-auto max-w-7xl px-4 py-6 md:px-6')}>
+    <div className={cn(isSheet ? 'px-5 pb-8 pt-4' : 'mx-auto max-w-7xl px-4 py-6 md:px-6')}>
       <div className={cn('gap-6', isSheet ? 'flex flex-col' : 'grid lg:grid-cols-2 lg:gap-8')}>
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -86,7 +86,7 @@ export function ProductDetailPanel({
             alt={`${product.name} board illustration`}
             className={cn(
               'mb-4 w-full rounded border border-rule object-cover',
-              isSheet ? 'max-h-48' : '',
+              isSheet ? 'max-h-56' : '',
             )}
           />
           <div className="flex flex-wrap gap-2">
@@ -140,14 +140,27 @@ export function ProductDetailPanel({
             </div>
           </dl>
 
-          <div className="flex flex-wrap gap-2">
-            <Button onClick={handleAdd} className="min-h-10">
+          <div
+            className={cn(
+              'gap-2',
+              isSheet ? 'flex flex-col' : 'flex flex-wrap',
+            )}
+          >
+            <Button onClick={handleAdd} className={cn('min-h-10', isSheet && 'w-full')}>
               {isInSpecification(product.id) ? 'Added to specification' : 'Add to specification'}
             </Button>
-            <Button variant="outline" onClick={() => toggleCompare(product.slug)} className="min-h-10">
+            <Button
+              variant="outline"
+              onClick={() => toggleCompare(product.slug)}
+              className={cn('min-h-10', isSheet && 'w-full')}
+            >
               {isInCompare(product.slug) ? 'In compare' : 'Add to compare'}
             </Button>
-            <Button variant="ghost" onClick={handleDownloadStub} className="min-h-10">
+            <Button
+              variant="ghost"
+              onClick={handleDownloadStub}
+              className={cn('min-h-10', isSheet && 'w-full justify-start px-3')}
+            >
               <Download className="size-4" />
               Download datasheet
             </Button>
@@ -156,7 +169,14 @@ export function ProductDetailPanel({
       </div>
 
       <Tabs defaultValue="technical" className={isSheet ? 'mt-6' : 'mt-10'}>
-        <TabsList className="h-auto w-full flex-wrap justify-start">
+        <TabsList
+          className={cn(
+            'max-w-full',
+            isSheet
+              ? 'inline-flex w-full flex-nowrap justify-start overflow-x-auto [&_[data-slot=tabs-trigger]]:shrink-0 [&_[data-slot=tabs-trigger]]:flex-none [&_[data-slot=tabs-trigger]]:px-3'
+              : 'h-auto w-full flex-wrap justify-start',
+          )}
+        >
           <TabsTrigger value="technical">Technical data</TabsTrigger>
           <TabsTrigger value="variants">Variants & packaging</TabsTrigger>
           <TabsTrigger value="documents">Documents</TabsTrigger>
