@@ -74,7 +74,7 @@ Limitations: product-level only (not full wall assemblies W111/W112); documents 
 
 **In v1:** product list, search (incl. material numbers), threshold filters, detail page, match reasoning, compare (3), specification list + export, URL-synced state.
 
-**Out of v1:** pricing, auth, i18n, live PIM, real BIM downloads, system-level assembly config - documented here and in [DECISIONS.md](./DECISIONS.md).
+**Out of v1:** pricing, auth, i18n, live PIM, real BIM downloads, system-level assembly config.
 
 ## Accessibility
 
@@ -96,10 +96,10 @@ Run axe DevTools on `/products` and `/products/[slug]` before submission.
 
 ## Testing
 
-| Layer | Coverage                                                   |
-| ----- | ---------------------------------------------------------- |
+| Layer | Coverage                                                         |
+| ----- | ---------------------------------------------------------------- |
 | Unit  | `ranking.ts`, `format.ts`, `query-params.ts`, document generator |
-| E2E   | Playwright - filter journey, material search, mobile sheet |
+| E2E   | Playwright - filter journey, material search, mobile sheet       |
 
 Not covered: visual regression, load testing, real PIM integration.
 
@@ -116,6 +116,19 @@ AI assisted research, scaffolding, component wiring, seed generation, and docume
 
 ## Deploy (manual)
 
-**Vercel (`apps/web`):** import the repo, set root directory to `apps/web`, deploy. No extra environment variables are required unless you override the default `/api` base path with `NEXT_PUBLIC_API_URL`.
+Target repository: `https://github.com/waleed-ahmed15/Spec_Finder_App`
 
-![CI](https://github.com/YOUR_ORG/specfinder/actions/workflows/ci.yml/badge.svg)
+Vercel settings:
+
+1. Import the repository above.
+2. Framework preset: Next.js.
+3. Root directory: `apps/web`.
+4. Install command: `pnpm install --frozen-lockfile`.
+5. Build command: `pnpm --filter @specfinder/web build`.
+6. Node version: 20.x.
+
+No environment variables are required for default behavior. Set `NEXT_PUBLIC_API_URL` only if you want to override `/api`.
+
+## Repository policy
+
+This repository intentionally keeps only one Markdown file: `README.md`.
