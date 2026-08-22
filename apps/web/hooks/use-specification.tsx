@@ -92,3 +92,12 @@ export function useProductFilters() {
     { history: 'push', shallow: false },
   );
 }
+
+export function useProductDetailSlug() {
+  return useQueryStates(
+    {
+      product: parseAsString,
+    },
+    { history: 'push', shallow: true },
+  );
+}

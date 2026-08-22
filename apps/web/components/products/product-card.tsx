@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { Check, Plus } from 'lucide-react';
 import { toast } from 'sonner';
 import type { MatchCriterion, ProductListItem, Variant } from '@specfinder/shared';
@@ -18,7 +17,7 @@ import {
   formatRw,
   formatWeightPerSqm,
 } from '@/lib/format';
-import { useSpecification } from '@/hooks/use-specification';
+import { useProductDetailSlug, useSpecification } from '@/hooks/use-specification';
 
 function FacePaperBadge({ facePaper }: { facePaper: string }) {
   const color = facePaperColor(facePaper);
@@ -208,9 +207,12 @@ export function ProductCard({
 }) {
   const { product } = item;
   const { addItem, isInSpecification } = useSpecification();
+  const [, setDetail] = useProductDetailSlug();
   const primaryVariant = product.variants[0];
   const inSpec = isInSpecification(product.id);
   const faceColor = facePaperColor(product.facePaper);
+
+  const openDetails = () => setDetail({ product: product.slug });
 
   const handleAddToSpec = () => {
     if (inSpec) return;
@@ -244,12 +246,13 @@ export function ProductCard({
             <FacePaperBadge facePaper={product.facePaper} />
           </div>
           <h2 className="font-display text-lg leading-tight font-semibold tracking-tight">
-            <Link
-              href={`/products/${product.slug}`}
-              className="text-ink hover:text-primary focus-visible:underline focus-visible:outline-none"
+            <button
+              type="button"
+              onClick={openDetails}
+              className="text-left text-ink hover:text-primary focus-visible:underline focus-visible:outline-none"
             >
               {product.name}
-            </Link>
+            </button>
           </h2>
           <p className="mt-1 line-clamp-2 text-sm leading-snug text-ink-muted">{product.tagline}</p>
         </div>
@@ -271,8 +274,8 @@ export function ProductCard({
 
       {/* Actions */}
       <div className="mt-auto flex gap-2 border-t border-rule px-4 py-3">
-        <Button variant="outline" size="sm" className="min-h-10 flex-1" asChild>
-          <Link href={`/products/${product.slug}`}>View details</Link>
+        <Button variant="outline" size="sm" className="min-h-10 flex-1" onClick={openDetails}>
+          View details
         </Button>
         <Button
           size="sm"

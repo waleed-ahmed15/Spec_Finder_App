@@ -96,7 +96,7 @@ export function CompareView() {
                     style={{ borderTop: `3px solid ${facePaperColor(product.facePaper)}` }}
                   >
                     <Link
-                      href={`/products/${product.slug}`}
+                      href={`/products?product=${product.slug}`}
                       className="font-display hover:text-primary"
                     >
                       {product.name}

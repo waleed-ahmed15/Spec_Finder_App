@@ -25,9 +25,10 @@ import { ActiveFilterChips } from '@/components/filters/active-filter-chips';
 import { ProductFiltersPanel } from '@/components/filters/product-filters-panel';
 import { ProductSearch } from '@/components/filters/product-search';
 import { ProductCard } from '@/components/products/product-card';
+import { ProductDetailSheet } from '@/components/products/product-detail-sheet';
 import { apiClient } from '@/lib/api-client';
 import { queryToSearchParams, SORT_LABELS } from '@/lib/query-params';
-import { useProductFilters } from '@/hooks/use-specification';
+import { useProductDetailSlug, useProductFilters } from '@/hooks/use-specification';
 import type { SortOption } from '@specfinder/shared';
 
 function ProductCardSkeleton() {
@@ -87,6 +88,7 @@ function EmptyState({
 
 export function ProductsResults() {
   const [filters, setFilters] = useProductFilters();
+  const [{ product: detailSlug }] = useProductDetailSlug();
 
   const searchParams = queryToSearchParams({
     q: filters.q || undefined,
@@ -128,8 +130,13 @@ export function ProductsResults() {
     (filters.category?.length ?? 0);
 
   const totalPages = data ? Math.ceil(data.total / data.pageSize) : 1;
+  const previewProduct =
+    detailSlug && data
+      ? data.items.find((item) => item.product.slug === detailSlug)?.product
+      : undefined;
 
   return (
+    <>
     <div className="mx-auto grid max-w-7xl gap-6 px-4 py-6 md:grid-cols-[280px_1fr] md:px-6">
       <aside className="hidden md:block">
         <div className="sticky top-6 space-y-4 rounded border border-rule bg-surface-raised p-4">
@@ -284,5 +291,7 @@ export function ProductsResults() {
         )}
       </section>
     </div>
+    <ProductDetailSheet previewProduct={previewProduct} />
+    </>
   );
 }
